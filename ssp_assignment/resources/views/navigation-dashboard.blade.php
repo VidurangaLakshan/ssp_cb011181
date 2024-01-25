@@ -18,7 +18,7 @@
                     <x-nav-link href="/" :active="request()->routeIs('/')">
                         {{ __('Homepage') }}
                     </x-nav-link>
-                    <x-nav-link href="/" :active="request()->routeIs('/')">
+                    <x-nav-link href="{{ route('user.index') }}" :active="request()->routeIs('user.*')">
                         {{ __('Users CRUD') }}
                     </x-nav-link>
                     <x-nav-link href="/" :active="request()->routeIs('/')">
