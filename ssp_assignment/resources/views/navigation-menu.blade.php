@@ -218,7 +218,7 @@
     </div>
 </nav> --}}
 
-<div class="top-area">
+{{-- <div class="top-area">
     <div class="header-area">
         <!-- Start Navigation -->
         <nav class="navbar navbar-default bootsnav navbar-scrollspy on no-full sticked" data-minus-value-desktop="70"
@@ -248,13 +248,13 @@
                             @auth
                                 <li><a href="{{ url('/dashboard') }}">Hi {{ Auth::user()->name }}!</a></li>
 
-                                {{-- <li>
+                                <li>
                                     <form id="logout-form" method="POST" action="{{ route('logout') }}">
                                         @csrf
                                     </form>
                                     <a href="#"
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                                </li> --}}
+                                </li>
                             @else
                                 <li><a href="{{ route('login') }}">Log in</a></li>
 
@@ -272,4 +272,39 @@
     </div><!--/.header-area-->
     <div class="clearfix"></div>
 
-</div><!-- /.top-area-->
+</div><!-- /.top-area--> --}}
+
+<header id="nav-header" class="header">
+    <a href="/" id="logo">Auto<span style="color: rgb(211, 5, 5)">Mate</span></a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+    </label>
+
+    <nav id="nav-nav">
+        <a id="nav-a" class="scroll" href="/" style="--i:0">Home</a>
+        <a id="nav-a" href="/" style="--i:1">Shop</a>
+        <a id="nav-a" href="/" style="--i:2">About</a>
+        @if (Route::has('login'))
+            @auth
+                <a id="nav-a" href="{{ url('/dashboard') }}">Hi {{ Auth::user()->name }}!</a>
+
+                <a>
+                    <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                        @csrf
+                    </form>
+                    <a id="nav-a" style="cursor:pointer"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                </a>
+            @else
+                <a id="nav-a" href="{{ route('login') }}">Log in</a>
+
+                @if (Route::has('register'))
+                    <a id="nav-a" href="{{ route('register') }}">Register</a>
+                @endif
+            @endauth
+        @endif
+    </nav>
+</header>

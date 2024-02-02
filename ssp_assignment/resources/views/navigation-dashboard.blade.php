@@ -16,13 +16,13 @@
                         {{ __('Admin Panel') }}
                     </x-nav-link>
                     <x-nav-link href="/" :active="request()->routeIs('/')">
-                        {{ __('Homepage') }}
+                        {{ __('Home') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('user.index') }}" :active="request()->routeIs('user.*')">
-                        {{ __('Users CRUD') }}
+                        {{ __('Users') }}
                     </x-nav-link>
                     <x-nav-link href="/" :active="request()->routeIs('/')">
-                        {{ __('Products CRUD') }}
+                        {{ __('Products') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -50,6 +50,10 @@
     <!--responsive.css-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
+    <!--header-style.css-->
+    <link rel="stylesheet" href="assets/css/header-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -73,7 +77,7 @@
 
     <!-- Page Content -->
 
-    <main style="margin-top: 90px">
+    <main>
         {{ $slot }}
     </main>
 
@@ -148,7 +152,7 @@
                                     <input type="text" class="form-control" placeholder="Add Email">
                                 </div><!--/.foot-email-box-->
                                 <div class="foot-email-subscribe">
-                                    <span><i class="fa fa-arrow-right"></i></span>
+                                    <span style="cursor: pointer"><a href="/"><i class="fa fa-arrow-right"></i></a></span>
                                 </div><!--/.foot-email-icon-->
                             </div><!--/.hm-foot-email-->
                         </div>
@@ -159,8 +163,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <p>
-                            &copy; copyright.designed and developed by <a
-                                href="https://www.themesine.com/">themesine</a>.
+                            &copy; copyright | designed and developed by Viduranga
                         </p><!--/p-->
                     </div>
                     <div class="col-sm-6">
