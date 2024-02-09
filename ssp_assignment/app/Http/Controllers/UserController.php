@@ -16,7 +16,7 @@ class UserController extends Controller
     public function index()
     {
         return view('admin.user.index', [
-            'users' => User::paginate(10),
+            'users' => User::orderBy('id','DESC')->paginate(10),
         ]);
     }
 
@@ -47,7 +47,7 @@ class UserController extends Controller
 
         User::create($validated);
 
-        return redirect()->route('user.index')->with('success', 'User created successfully!');
+        return redirect()->route('user.index')->with('success', 'User Created Successfully!');
     }
 
     /**
@@ -84,7 +84,7 @@ class UserController extends Controller
 
         $user->update($validated);
 
-        return redirect()->route('user.index')->with('success', 'User updated successfully!');
+        return redirect()->route('user.index')->with('success', 'User Updated Successfully!');
     }
 
     /**
@@ -94,6 +94,6 @@ class UserController extends Controller
     {
         $user->delete();
 
-        return redirect()->route('user.index')->with('success', 'User deleted successfully!');
+        return redirect()->route('user.index')->with('success', 'User Deleted Successfully!');
     }
 }

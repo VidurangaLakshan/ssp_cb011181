@@ -23,7 +23,10 @@ class ProductCategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.product_category.form');
+        return view('admin.product_category.form', [
+            'category' => new ProductCategory(),
+            'purpose' => 'Create Product Category',
+        ]);
     }
 
     /**
@@ -31,8 +34,16 @@ class ProductCategoryController extends Controller
      */
     public function store(StoreProductCategoryRequest $request)
     {
-        (new ProductCategory())->create($request->all());
-        return redirect()->route('product-category.index');
+        // (new ProductCategory())->create($request->all());
+        
+        $validated = $request->validate([
+            'name' => 'required',
+            'slug' => 'required',
+        ]);
+
+        ProductCategory::create($validated);
+        
+        return redirect()->route('product-category.index')->with('success', 'Product Category Created Successfully!');
     }
 
     /**
@@ -48,7 +59,10 @@ class ProductCategoryController extends Controller
      */
     public function edit(ProductCategory $productCategory)
     {
-        //
+        return view('admin.product_category.form', [
+            'category' => $productCategory,
+            'purpose' => 'Update Product Category',
+        ]);
     }
 
     /**
@@ -56,7 +70,14 @@ class ProductCategoryController extends Controller
      */
     public function update(UpdateProductCategoryRequest $request, ProductCategory $productCategory)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required',
+            'slug' => 'required',
+        ]);
+
+        $productCategory->update($validated);
+
+        return redirect()->route('product-category.index')->with('success', 'Product Category Updated Successfully!');
     }
 
     /**
@@ -66,6 +87,6 @@ class ProductCategoryController extends Controller
     {
         $productCategory->delete();
 
-        return redirect()->route('product-category.index');
+        return redirect()->route('product-category.index')->with('success', 'Product Category Deleted Successfully!');
     }
 }
