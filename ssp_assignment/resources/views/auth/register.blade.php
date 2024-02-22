@@ -1,5 +1,9 @@
-<x-app-layout>
-    <div style="padding-top: 80px">
+{{-- <x-app-layout> --}}
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+
+    {{-- <div style="padding-top: 80px"> --}}
         <x-authentication-card>
             <x-slot name="logo">
                 <x-authentication-card-logo />
@@ -74,5 +78,5 @@
                 </div>
             </form>
         </x-authentication-card>
-    </div>
-</x-app-layout>
+    {{-- </div> --}}
+{{-- </x-app-layout> --}}
