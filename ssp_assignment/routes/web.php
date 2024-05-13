@@ -1,5 +1,7 @@
 <?php
 
+use App\Enums\Role;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('pages.home');
+})->name('home');
 
 
 Route::middleware([
@@ -28,28 +27,73 @@ Route::middleware([
     'verified',
 ])->group(function () {
 
-
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return redirect()->route('home');
     })->name('dashboard');
 
+    Route::get('/dashboards', function () {
+        return view('dashboard');
+    })->name('dashboards');
+
     Route::resource(
-        'user', 
+        'user',
         \App\Http\Controllers\UserController::class
     );
 
     Route::resource(
-        'product-category', 
+        'product',
+        \App\Http\Controllers\ProductController::class
+    );
+
+    Route::resource(
+        'product-category',
         \App\Http\Controllers\ProductCategoryController::class
     );
-    
+
 });
 
 
-Route::get('/sample', function () {
-    return view('sample');
-});
+/**
+ * Admin Panel Routes
+ */
 
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/admin/dashboard', function () {
+    return view('windmill-admin.dashboard');
+})->name('admin.dashboard');
+
+Route::get('/admin/user', function () {
+    return view('windmill-admin.user.index', [
+        'users' => User::orderBy('id','DESC')->paginate(10),
+    ]);
+})->name('admin.user.index');
+
+Route::get('/admin/product', function () {
+    return view('windmill-admin.product.index', [
+        'products' => \App\Models\Product::orderBy('id','ASC')->paginate(10),
+    ]);
+})->name('admin.product.index');
+
+
+
+
+
+Route::get('/products', function () {
+    return view('pages.product');
+})->name('products');
+
+
+
+
+
+
+
+
+
+
+//Route::get('/sample', function () {
+//    return view('sample');
+//});
+//
+//Route::get('/product', function () {
+//    return view('product');
+//});

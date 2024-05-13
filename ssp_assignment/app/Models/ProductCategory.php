@@ -12,12 +12,6 @@ class ProductCategory extends Model
     protected $fillable = [
         'name',
         'slug',
-        'description',
-        'parent_id',
-        'status',
-        'meta_title',
-        'meta_description',
-        'meta_keywords',
     ];
 
 }

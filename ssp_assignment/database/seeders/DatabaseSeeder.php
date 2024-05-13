@@ -15,12 +15,17 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create();
 
         \App\Models\User::factory()->create([
-            'name' => 'Admin',
+            'name' => 'Administrator',
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin'),
             'role' => 1,
         ]);
 
-        $this->call(ProductCategorySeeder::class);
+        \App\Models\User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@test.com',
+            'password' => bcrypt('test'),
+            'role' => 2,
+        ]);
     }
 }
