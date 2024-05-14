@@ -28,4 +28,20 @@ class Product extends Model
 
         return ($isUrl) ? $this->image : Storage::disk('public')->url($this->image);
     }
+
+    public function inWishlist()
+    {
+        return $this->belongsToMany(User::class, 'wishlists')->withTimestamps();
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(ProductCategory::class, 'category_id');
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
 }

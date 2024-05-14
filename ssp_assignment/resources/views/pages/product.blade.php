@@ -217,40 +217,42 @@
                                             <div class="product__actions-item product__actions-item--quantity">
                                                 <div class="input-number">
                                                     <input class="input-number__input form-control form-control-lg"
-                                                           type="number" min="1" value="1" disabled>
+                                                           type="number" min="1" value="1" id="product_buy_count" disabled>
                                                     <div class="input-number__add"></div>
                                                     <div class="input-number__sub"></div>
                                                 </div>
                                             </div>
                                             <div class="product__actions-item product__actions-item--addtocart">
                                                 @if ($product->stock != "0")
-                                                    <button class="btn btn-primary btn-lg btn-block" disabled>Add to Cart</button>
+                                                    <button class="btn btn-primary btn-lg btn-block" disabled>Add to
+                                                        Cart
+                                                    </button>
                                                 @else
-                                                    <button class="btn btn-primary btn-lg btn-block">Add to Cart</button>
+                                                    <button class="btn btn-primary btn-lg btn-block">Add to Cart
+                                                    </button>
                                                 @endif
                                             </div>
                                             <div class="product__actions-divider"></div>
-                                            <button
-                                                class="product__actions-item product__actions-item--wishlist"
-                                                style="width: 100%"
-                                                type="button">
-                                                <svg width="16" height="16" fill="red">
-                                                    <path
-                                                        d="M13.9,8.4l-5.4,5.4c-0.3,0.3-0.7,0.3-1,0L2.1,8.4c-1.5-1.5-1.5-3.8,0-5.3C2.8,2.4,3.8,2,4.8,2s1.9,0.4,2.6,1.1L8,3.7l0.6-0.6C9.3,2.4,10.3,2,11.3,2c1,0,1.9,0.4,2.6,1.1C15.4,4.6,15.4,6.9,13.9,8.4z"/>
-                                                </svg>
-                                                <span>Add to Wishlist</span>
-                                            </button>
 
-                                            <button
-                                                class="product__actions-item product__actions-item--wishlist"
-                                                style="width: 100%"
-                                                type="button">
-                                                <svg width="16" height="16">
-                                                    <path
-                                                        d="M13.9,8.4l-5.4,5.4c-0.3,0.3-0.7,0.3-1,0L2.1,8.4c-1.5-1.5-1.5-3.8,0-5.3C2.8,2.4,3.8,2,4.8,2s1.9,0.4,2.6,1.1L8,3.7l0.6-0.6C9.3,2.4,10.3,2,11.3,2c1,0,1.9,0.4,2.6,1.1C15.4,4.6,15.4,6.9,13.9,8.4z"/>
-                                                </svg>
-                                                <span>Add to Wishlist</span>
-                                            </button>
+
+                                            @php
+                                                $isWishlisted = false;
+                                                $UserWishlistItems = DB::table('wishlists')->where('user_id', Auth::id())->get();
+                                                // check is the product is in the wishlist
+                                                foreach ($UserWishlistItems as $item) {
+                                                    if ($item->product_id == $product->id) {
+                                                        $isWishlisted = true;
+                                                    }
+                                                }
+                                                // use php to access the value of the input field
+                                            @endphp
+
+                                            <script>
+                                                let $quantity = document.getElementById('product_buy_count').value;
+                                                console.log($quantity);
+                                            </script>
+
+                                            @livewire('user-wishlist', ['product' => $product])
 
 
                                         </div>

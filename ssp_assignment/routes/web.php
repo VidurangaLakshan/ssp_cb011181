@@ -39,18 +39,46 @@ Route::middleware([
         'user',
         \App\Http\Controllers\UserController::class
     );
-
-    Route::resource(
-        'product',
-        \App\Http\Controllers\ProductController::class
-    );
-
-    Route::resource(
-        'product-category',
-        \App\Http\Controllers\ProductCategoryController::class
-    );
-
 });
+
+
+
+/**
+ * Product Routes
+ */
+
+Route::resource(
+    'product',
+    \App\Http\Controllers\ProductController::class
+);
+
+
+
+/**
+ * Product Category Routes
+ */
+
+Route::resource(
+    'product-category',
+    \App\Http\Controllers\ProductCategoryController::class
+);
+
+
+
+/**
+ * Wishlist Routes
+ */
+
+Route::resource(
+    'wishlist',
+    \App\Http\Controllers\WishlistController::class
+);
+
+
+
+
+
+
 
 
 /**
@@ -73,27 +101,3 @@ Route::get('/admin/product', function () {
     ]);
 })->name('admin.product.index');
 
-
-
-
-
-Route::get('/products', function () {
-    return view('pages.product');
-})->name('products');
-
-
-
-
-
-
-
-
-
-
-//Route::get('/sample', function () {
-//    return view('sample');
-//});
-//
-//Route::get('/product', function () {
-//    return view('product');
-//});

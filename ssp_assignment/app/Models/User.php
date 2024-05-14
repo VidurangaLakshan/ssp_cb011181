@@ -61,4 +61,19 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function inWishlist()
+    {
+        return $this->belongsToMany(Product::class, 'wishlists')->withTimestamps();
+    }
+
+    public function hasAddedToWishlist(Product $product)
+    {
+        return $this->inWishlist()->where('product_id', $product->id)->exists();
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
