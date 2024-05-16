@@ -11,23 +11,19 @@ class Product extends Model
     protected $fillable = [
         'name',
         'image',
+        'image2',
+        'image3',
+        'image4',
         'description',
         'price',
         'stock',
-        'sale_price',
         'status',
         'slug',
-//        'category_id',
+        'category_id',
         'meta_title',
         'meta_description',
         'meta_keywords',
     ];
-
-    public function getThumbnailImage(){
-        $isUrl = str_contains($this->image, 'http');
-
-        return ($isUrl) ? $this->image : Storage::disk('public')->url($this->image);
-    }
 
     public function inWishlist()
     {
@@ -36,7 +32,7 @@ class Product extends Model
 
     public function category()
     {
-        return $this->belongsTo(ProductCategory::class, 'category_id');
+        return $this->belongsTo(Category::class, 'category_id');
     }
 
     public function author()

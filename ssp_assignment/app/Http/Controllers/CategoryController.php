@@ -4,35 +4,64 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CategoryRequest;
 use App\Models\Category;
+use App\Models\Product;
+use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
     public function index()
     {
-        return Category::all();
+        return redirect()->route('admin.category.index');
     }
 
-    public function store(CategoryRequest $request)
+    public function create()
     {
-        return Category::create($request->validated());
+        return view('windmill-admin.category.form', [
+            'category' => new Category(),
+            'purpose' => 'Create Category',
+        ]);
+    }
+
+    public function store(Request $request)
+    {
+
+        Category::create([
+            'name' => $request->input('name'),
+            'slug' => $request->input('slug'),
+        ]);
+
+        return redirect()->route('admin.category.index')->with('success', 'Category Created Successfully!');
+
     }
 
     public function show(Category $category)
     {
-        return $category;
+        return view('pages.category', [
+            'category' => $category,
+        ]);
     }
 
-    public function update(CategoryRequest $request, Category $category)
+    public function edit(Category $category)
     {
-        $category->update($request->validated());
+        return view('windmill-admin.category.form', [
+            'category' => $category,
+            'purpose' => 'Edit Category',
+        ]);
+    }
 
-        return $category;
+    public function update(Request $request, Category $category)
+    {
+        $category->name = $request->input('name');
+        $category->slug = $request->input('slug');
+        $category->update();
+
+        return redirect()->route('admin.category.index')->with('success', 'Category Updated Successfully!');
     }
 
     public function destroy(Category $category)
     {
         $category->delete();
 
-        return response()->json();
+        return redirect()->route('admin.category.index')->with('success', 'Category Deleted Successfully!');
     }
 }

@@ -51,6 +51,10 @@ function data() {
         togglePagesMenuProduct() {
             this.isPagesMenuOpenProduct = !this.isPagesMenuOpenProduct
         },
+        isPagesMenuOpenCategory: false,
+        togglePagesMenuCategory() {
+            this.isPagesMenuOpenCategory = !this.isPagesMenuOpenCategory
+        },
         // Modal
         isModalOpen: false,
         trapCleanup: null,

@@ -15,19 +15,23 @@ return new class extends Migration {
 
             $table->string('image');
 
+            $table->string('image2')->nullable();
+
+            $table->string('image3')->nullable();
+
+            $table->string('image4')->nullable();
+
             $table->string('description');
 
             $table->string('price');
 
             $table->string('stock');
 
-            $table->string('for_sale')->nullable();
-
             $table->string('status')->nullable();
 
             $table->string('slug');
 
-            $table->foreignIdFor(\App\Models\ProductCategory::class)->constrained('product_categories')->cascadeOnDelete();
+            $table->foreignIdFor(\App\Models\Category::class)->constrained('categories')->cascadeOnDelete();
 
             $table->timestamps();
 

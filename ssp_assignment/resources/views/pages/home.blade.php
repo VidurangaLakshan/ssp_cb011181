@@ -248,7 +248,7 @@
                     <div class="owl-carousel">
 
                         @php
-                            $products = \App\Models\Product::all();
+                            $products = \App\Models\Product::all()->where('status', 'active')->take(10);
                         @endphp
 
                         @foreach($products as $product)
@@ -262,7 +262,7 @@
                                                     href="{{ route('product.show', $product->id) }}"
                                                     class="image__body"><img
                                                         class="image__tag"
-                                                        src="images/products/product-1-245x245.jpg"
+                                                        src="{{ asset($product->image) }}"
                                                         alt=""></a></div>
                                             <div
                                                 class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -284,8 +284,7 @@
                                             </div>
                                         </div>
                                         <div class="product-card__info">
-                                            <div class="product-card__meta"><span
-                                                    class="product-card__meta-title">Brand:&nbsp;</span>Product Brand
+                                            <div class="product-card__meta">
                                             </div>
                                             <div class="product-card__name">
                                                 <div>
@@ -377,7 +376,7 @@
                                                     href="{{ route('product.show', $product->id) }}"
                                                     class="image__body"><img
                                                         class="image__tag"
-                                                        src="images/products/product-1-245x245.jpg"
+                                                        src="{{ asset($product->image) }}"
                                                         alt=""></a></div>
                                             <div
                                                 class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
@@ -399,8 +398,7 @@
                                             </div>
                                         </div>
                                         <div class="product-card__info">
-                                            <div class="product-card__meta"><span
-                                                    class="product-card__meta-title">Brand:&nbsp;</span>Product Brand
+                                            <div class="product-card__meta">
                                             </div>
                                             <div class="product-card__name">
                                                 <div>
@@ -499,7 +497,7 @@
                                                 <div class="image image--type--product"><a href="#"
                                                                                            class="image__body"><img
                                                             class="image__tag"
-                                                            src="images/products/product-1-245x245.jpg"
+                                                            src="{{ asset($product->image) }}"
                                                             alt=""></a>
                                                 </div>
                                                 <div
@@ -522,8 +520,7 @@
                                                 </div>
                                             </div>
                                             <div class="product-card__info">
-                                                <div class="product-card__meta"><span
-                                                        class="product-card__meta-title">Brand:&nbsp;</span>{{ $product->brand }}
+                                                <div class="product-card__meta">
                                                 </div>
                                                 <div class="product-card__name">
                                                     <div>

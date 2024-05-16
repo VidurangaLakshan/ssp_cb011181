@@ -16,15 +16,7 @@ class WishlistController extends Controller
 
     public function create()
     {
-        Wishlist::create([
-            'user_id' => new Wishlist(),
-            'product_id' => 1,
-            'quantity' => 1,
-        ]);
-        return view('pages.home', [
-            'wishlist' => new Wishlist(),
-            'purpose' => 'Create Wishlist',
-        ]);
+        //
     }
 
     public function store(WishlistRequest $request)

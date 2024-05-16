@@ -8,8 +8,6 @@ use Livewire\Component;
 class UserWishlist extends Component
 {
     public Product $product;
-    public int $quantity;
-
 
     public function toggleAddToWishlist()
     {

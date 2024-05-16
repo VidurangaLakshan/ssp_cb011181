@@ -55,23 +55,23 @@ Route::resource(
 
 
 /**
- * Product Category Routes
- */
-
-Route::resource(
-    'product-category',
-    \App\Http\Controllers\ProductCategoryController::class
-);
-
-
-
-/**
  * Wishlist Routes
  */
 
 Route::resource(
     'wishlist',
     \App\Http\Controllers\WishlistController::class
+);
+
+
+
+/**
+ * Category Routes
+ */
+
+Route::resource(
+    'category',
+    \App\Http\Controllers\CategoryController::class
 );
 
 
@@ -85,9 +85,18 @@ Route::resource(
  * Admin Panel Routes
  */
 
+/**
+ * Dashboard
+ */
+
 Route::get('/admin/dashboard', function () {
     return view('windmill-admin.dashboard');
 })->name('admin.dashboard');
+
+
+/**
+ * Users
+ */
 
 Route::get('/admin/user', function () {
     return view('windmill-admin.user.index', [
@@ -95,9 +104,30 @@ Route::get('/admin/user', function () {
     ]);
 })->name('admin.user.index');
 
+
+/**
+ * Products
+ */
+
 Route::get('/admin/product', function () {
     return view('windmill-admin.product.index', [
-        'products' => \App\Models\Product::orderBy('id','ASC')->paginate(10),
+        'products' => \App\Models\Product::orderBy('id','DESC')->paginate(10),
     ]);
 })->name('admin.product.index');
+
+Route::post('/product/{product}/remove-images', [
+    \App\Http\Controllers\ProductController::class, 'removeSecondaryImages'
+])->name('product.remove-images');
+
+
+/**
+ * Categories
+ */
+
+Route::get('/admin/category', function () {
+    return view('windmill-admin.category.index', [
+        'categories' => \App\Models\Category::orderBy('id','DESC')->paginate(10),
+    ]);
+})->name('admin.category.index');
+
 
