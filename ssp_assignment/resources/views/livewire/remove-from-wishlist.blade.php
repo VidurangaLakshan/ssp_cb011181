@@ -1,5 +1,5 @@
 <div>
-    <button
+    <button wire:click="toggleRemoveFromWishlist()"
         type="button"
         class="wishlist__remove btn btn-sm btn-muted btn-icon"
     >

@@ -32,14 +32,7 @@
                                      data-layout="product-full">
                                     <div class="product-gallery__featured">
 
-                                        <div class="owl-carousel"><!--
-                The data-width and data-height attributes must contain the size of a larger version
-                of the product image.
-
-                If you do not know the image size, you can remove the data-width and data-height
-                attribute, in which case the width and height will be obtained from the naturalWidth
-                and naturalHeight property of img.image__tag.
-                -->
+                                        <div class="owl-carousel">
 
                                             <div class="image__body"><img class="image__tag"
                                                                           src="{{ asset($product->image) }}"

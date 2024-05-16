@@ -10,7 +10,7 @@ class WishlistController extends Controller
     public function index()
     {
         return view('pages.wishlist', [
-            'wishlist' => Wishlist::where('user_id', auth()->id())->get(),
+            'wishlistItems' => Wishlist::where('user_id', auth()->id())->get(),
         ]);
     }
 

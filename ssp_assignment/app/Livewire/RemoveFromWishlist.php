@@ -16,7 +16,10 @@ class RemoveFromWishlist extends Component
         $user = auth()->user();
 
         $user->inWishlist()->detach($this->product->id);
-        
+
+        // then redirect to the wishlist page
+        return redirect()->route('wishlist.index');
+
     }
 
     public function render()
