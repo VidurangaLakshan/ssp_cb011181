@@ -76,6 +76,95 @@ Route::resource(
 
 
 
+Route::resource(
+    'garage',
+    \App\Http\Controllers\GarageController::class
+);
+
+Route::resource(
+    'supported-vehicles',
+    \App\Http\Controllers\SupportedVehiclesController::class
+);
+
+Route::get('/admin/supported-vehicles', [
+    \App\Http\Controllers\SupportedVehiclesController::class, 'index'
+])->name('supported-vehicles.index');
+
+
+
+
+
+Route::get('/admin/vehicle-year', [
+    \App\Http\Controllers\VehicleYearController::class, 'index'
+])->name('vehicle-year.index');
+
+
+Route::get('/admin/vehicle-year/create', [
+    \App\Http\Controllers\VehicleYearController::class, 'create'
+])->name('vehicle-year.create');
+
+
+Route::post('/admin/vehicle-year', [
+    \App\Http\Controllers\VehicleYearController::class, 'store'
+])->name('vehicle-year.store');
+
+Route::delete('/admin/vehicle-year/{vehicleYear}', [
+    \App\Http\Controllers\VehicleYearController::class, 'destroy'
+])->name('vehicle-year.destroy');
+
+
+
+
+
+
+Route::get('/admin/vehicle-brand', [
+    \App\Http\Controllers\VehicleBrandController::class, 'index'
+])->name('vehicle-brand.index');
+
+
+Route::get('/admin/vehicle-brand/create', [
+    \App\Http\Controllers\VehicleBrandController::class, 'create'
+])->name('vehicle-brand.create');
+
+
+Route::post('/admin/vehicle-brand', [
+    \App\Http\Controllers\VehicleBrandController::class, 'store'
+])->name('vehicle-brand.store');
+
+Route::delete('/admin/vehicle-brand/{vehicleBrand}', [
+    \App\Http\Controllers\VehicleBrandController::class, 'destroy'
+])->name('vehicle-brand.destroy');
+
+
+
+
+
+
+
+
+Route::get('/admin/vehicle-model', [
+    \App\Http\Controllers\VehicleModelController::class, 'index'
+])->name('vehicle-model.index');
+
+
+Route::get('/admin/vehicle-model/create', [
+    \App\Http\Controllers\VehicleModelController::class, 'create'
+])->name('vehicle-model.create');
+
+
+Route::post('/admin/vehicle-model', [
+    \App\Http\Controllers\VehicleModelController::class, 'store'
+])->name('vehicle-model.store');
+
+
+Route::delete('/admin/vehicle-model/{vehicleModel}', [
+    \App\Http\Controllers\VehicleModelController::class, 'destroy'
+])->name('vehicle-model.destroy');
+
+
+
+
+
 
 
 
@@ -129,5 +218,144 @@ Route::get('/admin/category', function () {
         'categories' => \App\Models\Category::orderBy('id','DESC')->paginate(10),
     ]);
 })->name('admin.category.index');
+
+
+/**
+ * Orders
+ */
+
+Route::get('/success', function () {
+    return view('pages.order-success');
+})->name('order-success');
+
+
+
+
+
+
+/**
+ * Shop Routes
+ */
+
+Route::get('/shop', function () {
+    return view('pages.shop', [
+        'products' => \App\Models\Product::all()->where('status', '=', 'active'),
+        'latestProducts' => \App\Models\Product::orderBy('created_at','DESC')->where('status', '=', 'active')->take(5)->get(),
+        'categories' => \App\Models\Category::all(),
+        'currentCategory' => 'All Products',
+        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+    ]);
+})->name('shop');
+
+
+Route::get('/shop/{name}', function () {
+
+    $category = \App\Models\Category::where('name', request()->name)->first();
+
+    return view('pages.shop', [
+        'products' => \App\Models\Product::where('category_id', $category->id)->where('status', '=', 'active')->get(),
+        'latestProducts' => \App\Models\Product::orderBy('created_at','DESC')->where('status', '=', 'active')->take(5)->get(),
+        'categories' => \App\Models\Category::all(),
+        'currentCategory' => $category->name,
+        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+    ]);
+});
+
+
+Route::get('/shop/search/{name}', function () {
+
+    $products = \App\Models\Product::where('name', 'like', '%' . request()->name . '%')->where('status', '=', 'active')->get();
+
+    return view('pages.shop', [
+        'products' => $products,
+        'latestProducts' => \App\Models\Product::orderBy('created_at','DESC')->where('status', '=', 'active')->take(5)->get(),
+        'categories' => \App\Models\Category::all(),
+        'currentCategory' => 'Search Results for "' . request()->name . '"',
+        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+    ]);
+})->name('search');
+
+
+
+
+
+
+
+Route::get('/shop/filter/{token}', function () {
+
+    $products = \App\Models\Product::where('name', 'like', '%' . request()->name . '%')->where('status', '=', 'active')->get();
+
+    // get the supported vehicles
+    $supportedVehicles = \App\Models\SupportedVehicles::where('brand', request()->brand)->where('model', request()->model)->where('year', request()->year)->get();
+
+
+    $products = $products->filter(function ($product) use ($supportedVehicles) {
+        foreach ($supportedVehicles as $supportedVehicle) {
+            if ($product->id == $supportedVehicle->product_id) {
+                return $product;
+            }
+        }
+    });
+
+    dd($products);
+
+    return view('pages.shop', [
+        'products' => $products,
+        'latestProducts' => \App\Models\Product::orderBy('created_at','DESC')->where('status', '=', 'active')->take(5)->get(),
+        'categories' => \App\Models\Category::all(),
+        'currentCategory' => 'Search Results for "' . request()->name . '"',
+        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+    ]);
+})->name('search');
+
+
+
+/**
+ * Cart Routes
+ */
+
+Route::get('/cart', function () {
+    return view('pages.cart');
+})->name('cart');
+
+
+
+/**
+ * User Account Routes
+ */
+
+Route::get('/account/dashboard', function () {
+    return view('pages.account-dashboard');
+})->name('account-dashboard');
+
+Route::get('/account/garage', function () {
+    return view('pages.account-garage', [
+        'vehicleBrands' => \App\Models\VehicleBrand::all(),
+        'vehicleModels' => \App\Models\VehicleModel::all(),
+        'vehicleYears' => \App\Models\VehicleYear::all(),
+        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+    ]);
+})->name('account-garage');
+
+Route::get('/account/orders', function () {
+    return view('pages.account-orders');
+})->name('account-orders');
+
+Route::get('/account/order/details', function () {
+    return view('pages.account-order-details');
+})->name('account-order-details');
+
+
+
+/**
+ * Checkout Routes
+ */
+
+Route::get('/checkout', function () {
+    return view('pages.checkout');
+})->name('checkout');
+
+
+
 
 

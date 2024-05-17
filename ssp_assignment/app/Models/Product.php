@@ -40,4 +40,9 @@ class Product extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    public function supportedVehicles()
+    {
+        return $this->hasMany(SupportedVehicles::class, 'product_id');
+    }
+
 }

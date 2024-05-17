@@ -200,104 +200,17 @@ c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
                             </li>
 
                             <li
-                                class="main-menu__item main-menu__item--submenu--menu main-menu__item--has-submenu">
-                                <a href="#" class="main-menu__link">Shop
-                                    <svg width="7px"
-                                         height="5px">
-                                        <path
-                                            d="M0.280,0.282 C0.645,-0.084 1.238,-0.077 1.596,0.297 L3.504,2.310 L5.413,0.297 C5.770,-0.077 6.363,-0.084 6.728,0.282 C7.080,0.634 7.088,1.203 6.746,1.565 L3.504,5.007 L0.262,1.565 C-0.080,1.203 -0.072,0.634 0.280,0.282 Z"/>
-                                    </svg>
+                                class="main-menu__item">
+                                <a href="/shop" class="main-menu__link">Shop
                                 </a>
-                                <!-- <div class="main-menu__submenu">
-      <ul class="menu">
-       <li class="menu__item menu__item--has-submenu"><a
-         href="#" class="menu__link">Category
-         <span class="menu__arrow"><svg width="6px" height="9px">
-           <path
-            d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-          </svg></span></a>
-        <div class="menu__submenu">
-         <ul class="menu">
-          <li class="menu__item"><a href="category-3-columns-sidebar.html"
-            class="menu__link">3 Columns Sidebar</a></li>
-          <li class="menu__item"><a href="#"
-            class="menu__link">4 Columns Sidebar</a></li>
-          <li class="menu__item"><a href="category-5-columns-sidebar.html"
-            class="menu__link">5 Columns Sidebar</a></li>
-          <li class="menu__item"><a href="category-4-columns-full.html"
-            class="menu__link">4 Columns Full</a></li>
-          <li class="menu__item"><a href="category-5-columns-full.html"
-            class="menu__link">5 Columns Full</a></li>
-          <li class="menu__item"><a href="category-6-columns-full.html"
-            class="menu__link">6 Columns Full</a></li>
-          <li class="menu__item"><a href="category-7-columns-full.html"
-            class="menu__link">7 Columns Full</a></li>
-          <li class="menu__item"><a href="category-right-sidebar.html"
-            class="menu__link">Right Sidebar</a></li>
-         </ul>
-        </div>
-       </li>
-       <li class="menu__item menu__item--has-submenu"><a
-         href="#" class="menu__link">Shop Grid
-         <span class="menu__arrow"><svg width="6px" height="9px">
-           <path
-            d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-          </svg></span></a>
-        <div class="menu__submenu">
-         <ul class="menu">
-          <li class="menu__item"><a href="shop-grid-6-columns-full.html"
-            class="menu__link">6 Columns Full</a></li>
-          <li class="menu__item"><a href="shop-grid-5-columns-full.html"
-            class="menu__link">5 Columns Full</a></li>
-          <li class="menu__item"><a href="shop-grid-4-columns-full.html"
-            class="menu__link">4 Columns Full</a></li>
-          <li class="menu__item"><a
-            href="#"
-            class="menu__link">4 Columns Sidebar</a></li>
-          <li class="menu__item"><a
-            href="shop-grid-3-columns-sidebar.html"
-            class="menu__link">3 Columns Sidebar</a></li>
-         </ul>
-        </div>
-       </li>
-       <li class="menu__item"><a href="shop-list.html" class="menu__link">Shop
-         List</a></li>
-       <li class="menu__item"><a href="shop-table.html" class="menu__link">Shop
-         Table</a></li>
-       <li class="menu__item"><a href="shop-right-sidebar.html"
-         class="menu__link">Shop Right Sidebar</a></li>
-       <li class="menu__item menu__item--has-submenu"><a href="product-full.html"
-         class="menu__link">Product <span class="menu__arrow"><svg
-           width="6px" height="9px">
-           <path
-            d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z" />
-          </svg></span></a>
-        <div class="menu__submenu">
-         <ul class="menu">
-          <li class="menu__item"><a href="product-full.html"
-            class="menu__link">Full Width</a></li>
-          <li class="menu__item"><a href="product-sidebar.html"
-            class="menu__link">Left Sidebar</a></li>
-         </ul>
-        </div>
-       </li>
-       <li class="menu__item"><a href="cart.html" class="menu__link">Cart</a></li>
-       <li class="menu__item"><a href="checkout.html"
-         class="menu__link">Checkout</a></li>
-       <li class="menu__item"><a href="order-success.html" class="menu__link">Order
-         Success</a></li>
-       <li class="menu__item"><a href="wishlist.html"
-         class="menu__link">Wishlist</a></li>
-       <li class="menu__item"><a href="compare.html" class="menu__link">Compare</a>
-       </li>
-       <li class="menu__item"><a href="track-order.html" class="menu__link">Track
-         Order</a></li>
-      </ul>
-     </div> -->
                             </li>
 
                             <li class="main-menu__item">
-                                <a href="#" class="main-menu__link">Account</a>
+                                @guest
+                                <a href="{{ route('login') }}" class="main-menu__link">Account</a>
+                                @else
+                                <a href="/account/dashboard" class="main-menu__link">Account</a>
+                                @endguest
                             </li>
                         </ul>
                     </div>
@@ -346,20 +259,25 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                 </a></div>
             <div class="header__search">
                 <div class="search">
-                    <form action="#" class="search__body">
+                    <form class="search__body">
                         <div class="search__shadow"></div>
                         <input class="search__input" type="text"
                                placeholder="Enter Keyword or Part Name">
-                        <button
-                            class="search__button search__button--start" type="button"><span
-                                class="search__button-icon"><svg width="20" height="20">
+                        <a
+                            class="search__button search__button--start" href="{{ route('account-garage') }}">
+                            <span
+                                class="search__button-icon">
+                                <svg width="20" height="20">
                                         <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
  c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
  C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
  c4,0,5.4-0.6,6.3-1c0.2-0.1,0.2-0.8,0-1.2c-0.2-0.4-0.5-1.5-1-2C14.7,4,14.1,4,13.3,4z M4,10c-0.4-0.3-1.5-0.5-2,0
  c-0.4,0.4-0.4,1.6,0,2c0.5,0.5,4,0.4,4,0C6,11.2,4.5,10.3,4,10z M14,12c0,0.4,3.5,0.5,4,0c0.4-0.4,0.4-1.6,0-2c-0.5-0.5-1.3-0.3-2,0
  C15.5,10.2,14,11.3,14,12z"/>
-                                    </svg> </span><span class="search__button-title">Select Vehicle</span></button>
+                                    </svg>
+                            </span>
+                            <span class="search__button-title">Select Vehicle</span>
+                        </a>
                         <button class="search__button search__button--end" type="submit"><span
                                 class="search__button-icon"><svg width="20" height="20">
                                         <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
@@ -371,238 +289,24 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                             <div class="search__decor-start"></div>
                             <div class="search__decor-end"></div>
                         </div>
-                        <div class="search__dropdown search__dropdown--suggestions suggestions">
-                            <div class="suggestions__group">
-                                <div class="suggestions__group-title">Products</div>
-                                <div class="suggestions__group-content"><a
-                                        class="suggestions__item suggestions__product" href="#">
-                                        <div class="suggestions__product-image image image--type--product">
-                                            <div class="image__body"><img class="image__tag"
-                                                                          src="/images/products/product-2-40x40.jpg"
-                                                                          alt="">
-                                            </div>
-                                        </div>
-                                        <div class="suggestions__product-info">
-                                            <div class="suggestions__product-name">Brandix Brake Kit BDX-750Z370-S
-                                            </div>
-                                            <div class="suggestions__product-rating">
-                                                <div class="suggestions__product-rating-stars">
-                                                    <div class="rating">
-                                                        <div class="rating__body">
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="suggestions__product-rating-label">5 on 22 reviews
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="suggestions__product-price">$224.00</div>
-                                    </a><a class="suggestions__item suggestions__product" href="#">
-                                        <div class="suggestions__product-image image image--type--product">
-                                            <div class="image__body"><img class="image__tag"
-                                                                          src="/images/products/product-3-40x40.jpg"
-                                                                          alt="">
-                                            </div>
-                                        </div>
-                                        <div class="suggestions__product-info">
-                                            <div class="suggestions__product-name">Left Headlight Of Brandix Z54
-                                            </div>
-                                            <div class="suggestions__product-rating">
-                                                <div class="suggestions__product-rating-stars">
-                                                    <div class="rating">
-                                                        <div class="rating__body">
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star"></div>
-                                                            <div class="rating__star"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="suggestions__product-rating-label">3 on 14 reviews
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="suggestions__product-price">$349.00</div>
-                                    </a><a class="suggestions__item suggestions__product" href="#">
-                                        <div class="suggestions__product-image image image--type--product">
-                                            <div class="image__body"><img class="image__tag"
-                                                                          src="/images/products/product-4-40x40.jpg"
-                                                                          alt="">
-                                            </div>
-                                        </div>
-                                        <div class="suggestions__product-info">
-                                            <div class="suggestions__product-name">Glossy Gray 19" Aluminium Wheel
-                                                AR-19
-                                            </div>
-                                            <div class="suggestions__product-rating">
-                                                <div class="suggestions__product-rating-stars">
-                                                    <div class="rating">
-                                                        <div class="rating__body">
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star rating__star--active"></div>
-                                                            <div class="rating__star"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="suggestions__product-rating-label">4 on 26 reviews
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="suggestions__product-price">$589.00</div>
-                                    </a></div>
-                            </div>
-                            <div class="suggestions__group">
-                                <div class="suggestions__group-title">Categories</div>
-                                <div class="suggestions__group-content"><a
-                                        class="suggestions__item suggestions__category"
-                                        href="#">Headlights &
-                                        Lighting</a> <a class="suggestions__item suggestions__category"
-                                                        href="#">Fuel System & Filters</a> <a
-                                        class="suggestions__item suggestions__category" href="#">Body
-                                        Parts &
-                                        Mirrors</a> <a class="suggestions__item suggestions__category"
-                                                       href="#">Interior Accessories</a></div>
-                            </div>
-                        </div>
 
-
-                        {{--                        <div class="search__dropdown search__dropdown--vehicle-picker vehicle-picker">--}}
-                        {{--                            <div class="search__dropdown-arrow"></div>--}}
-                        {{--                            <div class="vehicle-picker__panel vehicle-picker__panel--list vehicle-picker__panel--active"--}}
-                        {{--                                 data-panel="list">--}}
-                        {{--                                <div class="vehicle-picker__panel-body">--}}
-                        {{--                                    <div class="vehicle-picker__text">Select a vehicle to find exact fit parts--}}
-                        {{--                                    </div>--}}
-                        {{--                                    <div class="vehicles-list">--}}
-                        {{--                                        <div class="vehicles-list__body"><label--}}
-                        {{--                                                class="vehicles-list__item"><span--}}
-                        {{--                                                    class="vehicles-list__item-radio input-radio"><span--}}
-                        {{--                                                        class="input-radio__body"><input--}}
-                        {{--                                                            class="input-radio__input" name="header-vehicle"--}}
-                        {{--                                                            type="radio"> <span--}}
-                        {{--                                                            class="input-radio__circle"></span>--}}
-                        {{--                                                        </span></span><span class="vehicles-list__item-info"><span--}}
-                        {{--                                                        class="vehicles-list__item-name">2011 Ford Focus S</span>--}}
-                        {{--                                                        <span class="vehicles-list__item-details">Engine 2.0L 1742DA--}}
-                        {{--                                                            L4--}}
-                        {{--                                                            FI Turbo</span> </span>--}}
-                        {{--                                                <button type="button"--}}
-                        {{--                                                        class="vehicles-list__item-remove">--}}
-                        {{--                                                    <svg width="16"--}}
-                        {{--                                                         height="16">--}}
-                        {{--                                                        <path--}}
-                        {{--                                                            d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>--}}
-                        {{--                                                    </svg>--}}
-                        {{--                                                </button>--}}
-                        {{--                                            </label> <label--}}
-                        {{--                                                class="vehicles-list__item"><span--}}
-                        {{--                                                    class="vehicles-list__item-radio input-radio"><span--}}
-                        {{--                                                        class="input-radio__body"><input--}}
-                        {{--                                                            class="input-radio__input" name="header-vehicle"--}}
-                        {{--                                                            type="radio"> <span--}}
-                        {{--                                                            class="input-radio__circle"></span>--}}
-                        {{--                                                        </span></span><span class="vehicles-list__item-info"><span--}}
-                        {{--                                                        class="vehicles-list__item-name">2019 Audi Q7--}}
-                        {{--                                                            Premium</span>--}}
-                        {{--                                                        <span class="vehicles-list__item-details">Engine 3.0L 5626CC--}}
-                        {{--                                                            L6--}}
-                        {{--                                                            QK</span> </span>--}}
-                        {{--                                                <button type="button"--}}
-                        {{--                                                        class="vehicles-list__item-remove">--}}
-                        {{--                                                    <svg width="16"--}}
-                        {{--                                                         height="16">--}}
-                        {{--                                                        <path--}}
-                        {{--                                                            d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>--}}
-                        {{--                                                    </svg>--}}
-                        {{--                                                </button>--}}
-                        {{--                                            </label></div>--}}
-                        {{--                                    </div>--}}
-                        {{--                                    <div class="vehicle-picker__actions">--}}
-                        {{--                                        <button type="button"--}}
-                        {{--                                                class="btn btn-primary btn-sm" data-to-panel="form">Add A--}}
-                        {{--                                            Vehicle--}}
-                        {{--                                        </button>--}}
-                        {{--                                    </div>--}}
-                        {{--                                </div>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="vehicle-picker__panel vehicle-picker__panel--form" data-panel="form">--}}
-                        {{--                                <div class="vehicle-picker__panel-body">--}}
-                        {{--                                    <div class="vehicle-form vehicle-form--layout--search">--}}
-                        {{--                                        <div class="vehicle-form__item vehicle-form__item--select"><select--}}
-                        {{--                                                class="form-control form-control-select2" aria-label="Year">--}}
-                        {{--                                                <option value="none">Select Year</option>--}}
-                        {{--                                                <option>2010</option>--}}
-                        {{--                                                <option>2011</option>--}}
-                        {{--                                                <option>2012</option>--}}
-                        {{--                                                <option>2013</option>--}}
-                        {{--                                                <option>2014</option>--}}
-                        {{--                                                <option>2015</option>--}}
-                        {{--                                                <option>2016</option>--}}
-                        {{--                                                <option>2017</option>--}}
-                        {{--                                                <option>2018</option>--}}
-                        {{--                                                <option>2019</option>--}}
-                        {{--                                                <option>2020</option>--}}
-                        {{--                                                <option>2021</option>--}}
-                        {{--                                                <option>2022</option>--}}
-                        {{--                                                <option>2023</option>--}}
-                        {{--                                            </select></div>--}}
-                        {{--                                        <div class="vehicle-form__item vehicle-form__item--select"><select--}}
-                        {{--                                                class="form-control form-control-select2" aria-label="Brand"--}}
-                        {{--                                                disabled="disabled">--}}
-                        {{--                                                <option value="none">Select Brand</option>--}}
-                        {{--                                                <option>Audi</option>--}}
-                        {{--                                                <option>BMW</option>--}}
-                        {{--                                                <option>Benz</option>--}}
-                        {{--                                                <option>Ford</option>--}}
-                        {{--                                                <option>Suzuki</option>--}}
-                        {{--                                                <option>Nissan</option>--}}
-                        {{--                                                <option>Honda</option>--}}
-                        {{--                                                <option>Toyota</option>--}}
-                        {{--                                            </select></div>--}}
-                        {{--                                        <div class="vehicle-form__item vehicle-form__item--select"><select--}}
-                        {{--                                                class="form-control form-control-select2" aria-label="Model"--}}
-                        {{--                                                disabled="disabled">--}}
-                        {{--                                                <option value="none">Select Model</option>--}}
-                        {{--                                                <option>N Wagon</option>--}}
-                        {{--                                                <option>Wagon-R</option>--}}
-                        {{--                                                <option>Land Cruiser</option>--}}
-                        {{--                                                <option>Prado</option>--}}
-                        {{--                                            </select></div>--}}
-                        {{--                                        <div class="vehicle-form__item vehicle-form__item--select"><select--}}
-                        {{--                                                class="form-control form-control-select2" aria-label="Engine"--}}
-                        {{--                                                disabled="disabled">--}}
-                        {{--                                                <option value="none">Select Engine</option>--}}
-                        {{--                                                <option>Gas 1.6L 125 hp AT/L4</option>--}}
-                        {{--                                                <option>Diesel 2.5L 200 hp AT/L5</option>--}}
-                        {{--                                                <option>Diesel 3.0L 250 hp MT/L5</option>--}}
-                        {{--                                            </select></div>--}}
-                        {{--                                        <div class="vehicle-form__divider">Or</div>--}}
-                        {{--                                        <div class="vehicle-form__item"><input type="text"--}}
-                        {{--                                                                               class="form-control"--}}
-                        {{--                                                                               placeholder="Enter VIN number"--}}
-                        {{--                                                                               aria-label="VIN number"></div>--}}
-                        {{--                                    </div>--}}
-                        {{--                                    <div class="vehicle-picker__actions">--}}
-                        {{--                                        <div class="search__car-selector-link"><a href="#"--}}
-                        {{--                                                                                  data-to-panel="list">Back--}}
-                        {{--                                                to vehicles list</a></div>--}}
-                        {{--                                        <button type="button"--}}
-                        {{--                                                class="btn btn-primary btn-sm" disabled="disabled">Add A--}}
-                        {{--                                            Vehicle--}}
-                        {{--                                        </button>--}}
-                        {{--                                    </div>--}}
-                        {{--                                </div>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
                     </form>
+
+                    <script>
+                        // Select the form and the input box
+                        let form = document.querySelector('.search__body');
+                        let inputBox = document.querySelector('.search__input');
+
+                        // Add an event listener to the input box
+                        inputBox.addEventListener('input', function() {
+                            // Get the value of the input box
+                            let inputValue = inputBox.value;
+
+                            // Update the 'action' attribute of the form
+                            form.action = "/shop/search/" + inputValue;
+                        });
+                    </script>
+
                 </div>
             </div>
 
@@ -698,11 +402,10 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                     @if (auth()->user()->role->value == 1)
                                         <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
                                     @else
-                                        <li><a href="">Dashboard</a></li>
+                                        <li><a href="/account/dashboard">Dashboard</a></li>
                                     @endif
-                                    <li><a href="">Garage</a></li>
-                                    <li><a href="">Order History</a></li>
-                                    <li><a href="">Addresses</a></li>
+                                    <li><a href="/account/garage">Garage</a></li>
+                                    <li><a href="/account/orders">Order History</a></li>
                                 </ul>
                                 <div class="account-menu__divider"></div>
                                 <ul class="account-menu__links">
@@ -842,8 +545,8 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                     </tr>
                                 </table>
                             </div>
-                            <div class="dropcart__actions"><a href="" class="btn btn-secondary">View
-                                    Cart</a> <a href="" class="btn btn-primary">Checkout</a></div>
+                            <div class="dropcart__actions"><a href="/cart" class="btn btn-secondary">View
+                                    Cart</a> <a href="/checkout" class="btn btn-primary">Checkout</a></div>
                         </div>
                     </div>
                 </div>
