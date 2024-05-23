@@ -59,9 +59,9 @@
                 <div class="mobile-header__body">
                     <button class="mobile-header__menu-button" type="button">
                         <svg
-                            width="18px" height="14px">
+                                width="18px" height="14px">
                             <path
-                                d="M-0,8L-0,6L18,6L18,8L-0,8ZM-0,-0L18,-0L18,2L-0,2L-0,-0ZM14,14L-0,14L-0,12L14,12L14,14Z"/>
+                                    d="M-0,8L-0,6L18,6L18,8L-0,8ZM-0,-0L18,-0L18,2L-0,2L-0,-0ZM14,14L-0,14L-0,12L14,12L14,14Z"/>
                         </svg>
                     </button>
 
@@ -102,7 +102,7 @@ c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
                             <button type="button"
                                     class="mobile-search__vehicle-picker" aria-label="Select Vehicle">
                                 <svg
-                                    width="20" height="20">
+                                        width="20" height="20">
                                     <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
  c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
  C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
@@ -113,7 +113,7 @@ c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
                                 <span class="mobile-search__vehicle-picker-label">Vehicle</span></button>
                             <button type="submit" class="mobile-search__button mobile-search__button--search">
                                 <svg
-                                    width="20" height="20">
+                                        width="20" height="20">
                                     <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
  c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
  c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/>
@@ -135,7 +135,7 @@ c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
                         <div class="mobile-indicator mobile-indicator--search d-md-none">
                             <button type="button"
                                     class="mobile-indicator__button"><span class="mobile-indicator__icon"><svg
-                                        width="20" height="20">
+                                            width="20" height="20">
                                             <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
  c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
  c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/>
@@ -143,20 +143,20 @@ c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
                         </div>
                         <div class="mobile-indicator d-none d-md-block"><a href="#"
                                                                            class="mobile-indicator__button"><span
-                                    class="mobile-indicator__icon"><svg
-                                        width="20" height="20">
+                                        class="mobile-indicator__icon"><svg
+                                            width="20" height="20">
                                             <path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
  c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z"/>
                                         </svg></span></a></div>
                         <div class="mobile-indicator d-none d-md-block"><a href="#"
                                                                            class="mobile-indicator__button"><span
-                                    class="mobile-indicator__icon"><svg
-                                        width="20" height="20">
+                                        class="mobile-indicator__icon"><svg
+                                            width="20" height="20">
                                             <path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
  c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z"/>
                                         </svg></span></a></div>
                         <div class="mobile-indicator"><a href="#" class="mobile-indicator__button"><span
-                                    class="mobile-indicator__icon"><svg width="20" height="20">
+                                        class="mobile-indicator__icon"><svg width="20" height="20">
                                             <circle cx="7" cy="17" r="2"/>
                                             <circle cx="15" cy="17" r="2"/>
                                             <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6
@@ -195,21 +195,21 @@ c-2.8,0-5.5-1.7-6.4-4C116.7,15.1,117.4,14,118.4,14z"></path>
                     <div class="main-menu">
                         <ul class="main-menu__list" style="justify-content: space-evenly">
                             <li
-                                class="main-menu__item">
+                                    class="main-menu__item">
                                 <a href="/" class="main-menu__link">Home</a>
                             </li>
 
                             <li
-                                class="main-menu__item">
+                                    class="main-menu__item">
                                 <a href="/shop" class="main-menu__link">Shop
                                 </a>
                             </li>
 
                             <li class="main-menu__item">
                                 @guest
-                                <a href="{{ route('login') }}" class="main-menu__link">Account</a>
+                                    <a href="{{ route('login') }}" class="main-menu__link">Account</a>
                                 @else
-                                <a href="/account/dashboard" class="main-menu__link">Account</a>
+                                    <a href="/account/dashboard" class="main-menu__link">Account</a>
                                 @endguest
                             </li>
                         </ul>
@@ -264,9 +264,9 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                         <input class="search__input" type="text"
                                placeholder="Enter Keyword or Part Name">
                         <a
-                            class="search__button search__button--start" href="{{ route('account-garage') }}">
+                                class="search__button search__button--start" href="{{ route('account-garage') }}">
                             <span
-                                class="search__button-icon">
+                                    class="search__button-icon">
                                 <svg width="20" height="20">
                                         <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
  c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
@@ -279,7 +279,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                             <span class="search__button-title">Select Vehicle</span>
                         </a>
                         <button class="search__button search__button--end" type="submit"><span
-                                class="search__button-icon"><svg width="20" height="20">
+                                    class="search__button-icon"><svg width="20" height="20">
                                         <path d="M19.2,17.8c0,0-0.2,0.5-0.5,0.8c-0.4,0.4-0.9,0.6-0.9,0.6s-0.9,0.7-2.8-1.6c-1.1-1.4-2.2-2.8-3.1-3.9C10.9,14.5,9.5,15,8,15
  c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7c0,1.5-0.5,2.9-1.3,4c1.1,0.8,2.5,2,4,3.1C20,16.8,19.2,17.8,19.2,17.8z M8,3C5.2,3,3,5.2,3,8
  c0,2.8,2.2,5,5,5c2.8,0,5-2.2,5-5C13,5.2,10.8,3,8,3z"/>
@@ -298,7 +298,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                         let inputBox = document.querySelector('.search__input');
 
                         // Add an event listener to the input box
-                        inputBox.addEventListener('input', function() {
+                        inputBox.addEventListener('input', function () {
                             // Get the value of the input box
                             let inputValue = inputBox.value;
 
@@ -322,7 +322,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="indicator">
                         <a href="{{ route('wishlist.index') }}" class="indicator__button">
                         <span
-                            class="indicator__icon">
+                                class="indicator__icon">
                             <svg width="32" height="32">
                                     <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
  C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
@@ -337,7 +337,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="indicator">
                         <a href="{{ route('login') }}" class="indicator__button">
                         <span
-                            class="indicator__icon">
+                                class="indicator__icon">
                             <svg width="32" height="32">
                                     <path d="M23,4c3.9,0,7,3.1,7,7c0,6.3-11.4,15.9-14,16.9C13.4,26.9,2,17.3,2,11c0-3.9,3.1-7,7-7c2.1,0,4.1,1,5.4,2.6l1.6,2l1.6-2
  C18.9,5,20.9,4,23,4 M23,2c-2.8,0-5.4,1.3-7,3.4C14.4,3.3,11.8,2,9,2c-5,0-9,4-9,9c0,8,14,19,16,19s16-11,16-19C32,6,28,2,23,2L23,2
@@ -372,7 +372,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                             <span class="indicator__icon">
                                 <svg width="32" height="32">
                                     <path
-                                        d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z"/>
+                                            d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z"/>
                                 </svg>
                             </span>
                             <span class="indicator__title">Hello, Log In</span>
@@ -383,7 +383,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                             <span class="indicator__icon">
                                 <svg width="32" height="32">
                                     <path
-                                        d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z"/>
+                                            d="M16,18C9.4,18,4,23.4,4,30H2c0-6.2,4-11.5,9.6-13.3C9.4,15.3,8,12.8,8,10c0-4.4,3.6-8,8-8s8,3.6,8,8c0,2.8-1.5,5.3-3.6,6.7C26,18.5,30,23.8,30,30h-2C28,23.4,22.6,18,16,18z M22,10c0-3.3-2.7-6-6-6s-6,2.7-6,6s2.7,6,6,6S22,13.3,22,10z"/>
                                 </svg>
                             </span>
                             <span class="indicator__title">Welcome Back,</span>
@@ -426,134 +426,172 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
 
                 </div>
 
-                    @auth
-                <div class="indicator indicator--trigger--click">
-                    <a href="#"
-                       class="indicator__button"><span
-                            class="indicator__icon"><svg width="32"
-                                                         height="32">
+                @php
+                    $cart = \App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
+
+//                    $productsInCart = DB::table('cart_product')->where('cart_id', $cart->id)->get();
+
+                @endphp
+
+
+                @auth
+
+                    @if (\App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first() != null)
+                        <div class="indicator indicator--trigger--click">
+                            <a href="#"
+                               class="indicator__button"><span
+                                        class="indicator__icon"><svg width="32"
+                                                                     height="32">
                                     <circle cx="10.5" cy="27.5" r="2.5"/>
                                     <circle cx="23.5" cy="27.5" r="2.5"/>
                                     <path d="M26.4,21H11.2C10,21,9,20.2,8.8,19.1L5.4,4.8C5.3,4.3,4.9,4,4.4,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h3.4C5.8,2,7,3,7.3,4.3
  l3.4,14.3c0.1,0.2,0.3,0.4,0.5,0.4h15.2c0.2,0,0.4-0.1,0.5-0.4l3.1-10c0.1-0.2,0-0.4-0.1-0.4C29.8,8.1,29.7,8,29.5,8H14
  c-0.6,0-1-0.4-1-1s0.4-1,1-1h15.5c0.8,0,1.5,0.4,2,1c0.5,0.6,0.6,1.5,0.4,2.2l-3.1,10C28.5,20.3,27.5,21,26.4,21z"/>
-                                </svg> <span class="indicator__counter">3</span> </span><span
-                            class="indicator__title">Shopping Cart</span> <span
-                            class="indicator__value">Rs.26,499.00</span>
-                    </a>
+                                </svg>
+                            <span
+                                    class="indicator__counter">{{ \App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first()->item_count }}</span>
+                        </span>
+                                <span
+                                        class="indicator__title">Shopping Cart</span> <span
+                                        class="indicator__value">Rs.{{ number_format(\App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first()->sub_total, 2, '.', ',') }}</span>
+                            </a>
 
-                    <div class="indicator__content">
-                        <div class="dropcart">
-                            <ul class="dropcart__list">
-                                <li class="dropcart__item">
-                                    <div class="dropcart__item-image image image--type--product"><a
-                                            class="image__body" href="#"><img class="image__tag"
-                                                                              src="/images/products/product-4-70x70.jpg"
-                                                                              alt=""></a>
+                            @php
+                                $cart = \App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
+
+                                if ($cart != null){
+                                $productsInCart = DB::table('cart_product')->where('cart_id', $cart->id)->get();
+                                }
+                            @endphp
+
+
+                            <div class="indicator__content">
+                                <div class="dropcart">
+                                    <ul class="dropcart__list">
+
+                                        @foreach($productsInCart as $singleCartItem)
+
+                                            @php
+
+                                                $product = \App\Models\Product::where('id', $singleCartItem->product_id)->first();
+
+                                                $productDetails = DB::table('cart_product')->where('product_id', $product->id)->where('cart_id', $cart->id)->first();
+
+                                            @endphp
+
+                                            <li class="dropcart__item">
+                                                <div class="dropcart__item-image image image--type--product"><a
+                                                            class="image__body"
+                                                            href="{{ route('product.show', $product->id) }}"><img
+                                                                class="image__tag"
+                                                                src="{{ asset($product->image) }}"
+                                                                alt=""></a>
+                                                </div>
+                                                <div class="dropcart__item-info">
+                                                    <div class="dropcart__item-name"><a
+                                                                href="{{ route('product.show', $product->id) }}">{{ $product->name }}</a>
+                                                    </div>
+                                                    <ul class="dropcart__item-features">
+                                                    </ul>
+                                                    <div class="dropcart__item-meta">
+                                                        <div
+                                                                class="dropcart__item-quantity">{{ $productDetails->quantity }}</div>
+                                                        <div class="dropcart__item-price">
+                                                            Rs.{{ number_format($productDetails->price, 2, '.', ',') }}</div>
+                                                    </div>
+                                                </div>
+                                                {{--                                                    <form action="{{ route('cart.remove', $product->id) }}">--}}
+                                                {{--                                                        <button type="submit" class="dropcart__item-remove">--}}
+                                                {{--                                                            <svg--}}
+                                                {{--                                                                width="10" height="10">--}}
+                                                {{--                                                                <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6--}}
+                                                {{-- c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4--}}
+                                                {{-- C9.2,7.8,9.2,8.4,8.8,8.8z"/>--}}
+                                                {{--                                                            </svg>--}}
+                                                {{--                                                        </button>--}}
+                                                {{--                                                    </form>--}}
+                                            </li>
+                                            <li class="dropcart__divider" role="presentation"></li>
+                                        @endforeach
+
+                                    </ul>
+
+
+
+                                    <div class="dropcart__totals">
+                                        <table>
+                                            <tr>
+                                                <th>Subtotal</th>
+                                                <td>Rs.{{ number_format($cart->sub_total, 2, '.', ',') }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Shipping</th>
+                                                <td>Rs.0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Total</th>
+                                                <td>Rs.{{ number_format($cart->sub_total, 2, '.', ',') }}</td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <div class="dropcart__item-info">
-                                        <div class="dropcart__item-name"><a href="#">Glossy Gray 19"
-                                                Aluminium Wheel AR-19</a></div>
-                                        <ul class="dropcart__item-features">
-                                            <li>Color: Yellow</li>
-                                            <li>Material: Aluminium</li>
-                                        </ul>
-                                        <div class="dropcart__item-meta">
-                                            <div class="dropcart__item-quantity">2</div>
-                                            <div class="dropcart__item-price">$699.00</div>
-                                        </div>
+                                    <div class="dropcart__actions"><a href="/cart" class="btn btn-secondary">View
+                                            Cart</a>
+                                        @if ($cart != null && $cart->item_count > 0)
+                                            <a href="/checkout" class="btn btn-primary">Checkout</a>
+                                        @endif
                                     </div>
-                                    <button type="button" class="dropcart__item-remove">
-                                        <svg
-                                            width="10" height="10">
-                                            <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
- c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
- C9.2,7.8,9.2,8.4,8.8,8.8z"/>
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li class="dropcart__divider" role="presentation"></li>
-                                <li class="dropcart__item">
-                                    <div class="dropcart__item-image image image--type--product"><a
-                                            class="image__body" href=""><img class="image__tag"
-                                                                             src="/images/products/product-2-70x70.jpg"
-                                                                             alt=""></a>
-                                    </div>
-                                    <div class="dropcart__item-info">
-                                        <div class="dropcart__item-name"><a href="">Brandix Brake
-                                                Kit BDX-750Z370-S</a></div>
-                                        <div class="dropcart__item-meta">
-                                            <div class="dropcart__item-quantity">1</div>
-                                            <div class="dropcart__item-price">$849.00</div>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="dropcart__item-remove">
-                                        <svg
-                                            width="10" height="10">
-                                            <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
- c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
- C9.2,7.8,9.2,8.4,8.8,8.8z"/>
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li class="dropcart__divider" role="presentation"></li>
-                                <li class="dropcart__item">
-                                    <div class="dropcart__item-image image image--type--product"><a
-                                            class="image__body" href=""><img class="image__tag"
-                                                                             src="/images/products/product-5-70x70.jpg"
-                                                                             alt=""></a>
-                                    </div>
-                                    <div class="dropcart__item-info">
-                                        <div class="dropcart__item-name"><a href="">Twin Exhaust
-                                                Pipe From Brandix Z54</a></div>
-                                        <ul class="dropcart__item-features">
-                                            <li>Color: True Red</li>
-                                        </ul>
-                                        <div class="dropcart__item-meta">
-                                            <div class="dropcart__item-quantity">3</div>
-                                            <div class="dropcart__item-price">$1210.00</div>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="dropcart__item-remove">
-                                        <svg
-                                            width="10" height="10">
-                                            <path d="M8.8,8.8L8.8,8.8c-0.4,0.4-1,0.4-1.4,0L5,6.4L2.6,8.8c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L3.6,5L1.2,2.6
- c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L5,3.6l2.4-2.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L6.4,5l2.4,2.4
- C9.2,7.8,9.2,8.4,8.8,8.8z"/>
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li class="dropcart__divider" role="presentation"></li>
-                            </ul>
-                            <div class="dropcart__totals">
-                                <table>
-                                    <tr>
-                                        <th>Subtotal</th>
-                                        <td>$5877.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Shipping</th>
-                                        <td>$25.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tax</th>
-                                        <td>$0.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Total</th>
-                                        <td>Rs.26,499.00</td>
-                                    </tr>
-                                </table>
+                                </div>
                             </div>
-                            <div class="dropcart__actions"><a href="/cart" class="btn btn-secondary">View
-                                    Cart</a> <a href="/checkout" class="btn btn-primary">Checkout</a></div>
                         </div>
-                    </div>
-                </div>
                     @else
-                        <div class="indicator indicator">
-                            <a href="{{ route('login') }}"
+                        <div class="indicator indicator--trigger--click">
+                            <a href="#"
                                class="indicator__button"><span
+                                        class="indicator__icon"><svg width="32"
+                                                                     height="32">
+                                    <circle cx="10.5" cy="27.5" r="2.5"/>
+                                    <circle cx="23.5" cy="27.5" r="2.5"/>
+                                    <path d="M26.4,21H11.2C10,21,9,20.2,8.8,19.1L5.4,4.8C5.3,4.3,4.9,4,4.4,4H1C0.4,4,0,3.6,0,3s0.4-1,1-1h3.4C5.8,2,7,3,7.3,4.3
+ l3.4,14.3c0.1,0.2,0.3,0.4,0.5,0.4h15.2c0.2,0,0.4-0.1,0.5-0.4l3.1-10c0.1-0.2,0-0.4-0.1-0.4C29.8,8.1,29.7,8,29.5,8H14
+ c-0.6,0-1-0.4-1-1s0.4-1,1-1h15.5c0.8,0,1.5,0.4,2,1c0.5,0.6,0.6,1.5,0.4,2.2l-3.1,10C28.5,20.3,27.5,21,26.4,21z"/>
+                                </svg>
+                            <span
+                                    class="indicator__counter">0</span>
+                        </span>
+                                <span
+                                        class="indicator__title">Shopping Cart</span> <span
+                                        class="indicator__value">Rs.0.00</span>
+                            </a>
+
+
+                            <div class="indicator__content">
+                                <div class="dropcart">
+                                    <div class="dropcart__totals">
+                                        <table>
+                                            <tr>
+                                                <th>Subtotal</th>
+                                                <td>Rs.0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Shipping</th>
+                                                <td>Rs.0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Total</th>
+                                                <td>Rs.0.00</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="dropcart__actions"><a href="/cart" class="btn btn-secondary">View
+                                            Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                @else
+                    <div class="indicator indicator">
+                        <a href="{{ route('login') }}"
+                           class="indicator__button"><span
                                     class="indicator__icon"><svg width="32"
                                                                  height="32">
                                     <circle cx="10.5" cy="27.5" r="2.5"/>
@@ -564,9 +602,9 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 </svg> <span class="indicator__counter">0</span> </span><span
                                     class="indicator__title">Shopping Cart</span> <span
                                     class="indicator__value">Rs.0.00</span>
-                            </a>
-                        </div>
-                    @endauth
+                        </a>
+                    </div>
+                @endauth
             </div>
         </div>
     </header><!-- site__header / end -->
@@ -613,13 +651,13 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="mobile-menu__settings-list">
                         <div class="mobile-menu__setting" data-mobile-menu-item>
                             <button
-                                class="mobile-menu__setting-button" title="Language" data-mobile-menu-trigger><span
-                                    class="mobile-menu__setting-icon"><img src="/images/languages/language-5.png"
-                                                                           alt="">
+                                    class="mobile-menu__setting-button" title="Language" data-mobile-menu-trigger><span
+                                        class="mobile-menu__setting-icon"><img src="/images/languages/language-5.png"
+                                                                               alt="">
                                 </span><span class="mobile-menu__setting-title">Italian</span> <span
-                                    class="mobile-menu__setting-arrow"><svg width="6px" height="9px">
+                                        class="mobile-menu__setting-arrow"><svg width="6px" height="9px">
                                         <path
-                                            d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z"/>
+                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z"/>
                                     </svg></span></button>
                             <div class="mobile-menu__setting-panel" data-mobile-menu-panel>
                                 <div class="mobile-menu__panel mobile-menu__panel--hidden">
@@ -628,7 +666,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Language</div>
@@ -639,7 +677,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 <button type="button" class=""
                                                         data-mobile-menu-trigger>
                                                     <div class="mobile-menu__links-image"><img
-                                                            src="/images/languages/language-1.png" alt="">
+                                                                src="/images/languages/language-1.png" alt="">
                                                     </div>
                                                     English
                                                 </button>
@@ -648,7 +686,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 <button type="button" class=""
                                                         data-mobile-menu-trigger>
                                                     <div class="mobile-menu__links-image"><img
-                                                            src="/images/languages/language-2.png" alt="">
+                                                                src="/images/languages/language-2.png" alt="">
                                                     </div>
                                                     French
                                                 </button>
@@ -657,7 +695,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 <button type="button" class=""
                                                         data-mobile-menu-trigger>
                                                     <div class="mobile-menu__links-image"><img
-                                                            src="/images/languages/language-3.png" alt="">
+                                                                src="/images/languages/language-3.png" alt="">
                                                     </div>
                                                     German
                                                 </button>
@@ -666,7 +704,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 <button type="button" class=""
                                                         data-mobile-menu-trigger>
                                                     <div class="mobile-menu__links-image"><img
-                                                            src="/images/languages/language-4.png" alt="">
+                                                                src="/images/languages/language-4.png" alt="">
                                                     </div>
                                                     Russian
                                                 </button>
@@ -675,7 +713,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 <button type="button" class=""
                                                         data-mobile-menu-trigger>
                                                     <div class="mobile-menu__links-image"><img
-                                                            src="/images/languages/language-5.png" alt="">
+                                                                src="/images/languages/language-5.png" alt="">
                                                     </div>
                                                     Italian
                                                 </button>
@@ -687,12 +725,12 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                         </div>
                         <div class="mobile-menu__setting" data-mobile-menu-item>
                             <button
-                                class="mobile-menu__setting-button" title="Currency" data-mobile-menu-trigger><span
-                                    class="mobile-menu__setting-icon mobile-menu__setting-icon--currency">$
+                                    class="mobile-menu__setting-button" title="Currency" data-mobile-menu-trigger><span
+                                        class="mobile-menu__setting-icon mobile-menu__setting-icon--currency">$
                                 </span><span class="mobile-menu__setting-title">US Dollar</span> <span
-                                    class="mobile-menu__setting-arrow"><svg width="6px" height="9px">
+                                        class="mobile-menu__setting-arrow"><svg width="6px" height="9px">
                                         <path
-                                            d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z"/>
+                                                d="M0.3,7.4l3-2.9l-3-2.9c-0.4-0.3-0.4-0.9,0-1.3l0,0c0.4-0.3,0.9-0.4,1.3,0L6,4.5L1.6,8.7c-0.4,0.4-0.9,0.4-1.3,0l0,0C-0.1,8.4-0.1,7.8,0.3,7.4z"/>
                                     </svg></span></button>
                             <div class="mobile-menu__setting-panel" data-mobile-menu-panel>
                                 <div class="mobile-menu__panel mobile-menu__panel--hidden">
@@ -701,7 +739,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Currency</div>
@@ -737,27 +775,27 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="mobile-menu__divider"></div>
                     <div class="mobile-menu__indicators"><a class="mobile-menu__indicator"
                                                             href="wishlist.html"><span
-                                class="mobile-menu__indicator-icon"><svg width="20"
-                                                                         height="20">
+                                    class="mobile-menu__indicator-icon"><svg width="20"
+                                                                             height="20">
                                     <path d="M14,3c2.2,0,4,1.8,4,4c0,4-5.2,10-8,10S2,11,2,7c0-2.2,1.8-4,4-4c1,0,1.9,0.4,2.7,1L10,5.2L11.3,4C12.1,3.4,13,3,14,3 M14,1
  c-1.5,0-2.9,0.6-4,1.5C8.9,1.6,7.5,1,6,1C2.7,1,0,3.7,0,7c0,5,6,12,10,12s10-7,10-12C20,3.7,17.3,1,14,1L14,1z"/>
                                 </svg> </span><span class="mobile-menu__indicator-title">Wishlist</span> </a><a
-                            class="mobile-menu__indicator" href="account-dashboard.html"><span
-                                class="mobile-menu__indicator-icon"><svg width="20" height="20">
+                                class="mobile-menu__indicator" href="account-dashboard.html"><span
+                                    class="mobile-menu__indicator-icon"><svg width="20" height="20">
                                     <path d="M20,20h-2c0-4.4-3.6-8-8-8s-8,3.6-8,8H0c0-4.2,2.6-7.8,6.3-9.3C4.9,9.6,4,7.9,4,6c0-3.3,2.7-6,6-6s6,2.7,6,6
  c0,1.9-0.9,3.6-2.3,4.7C17.4,12.2,20,15.8,20,20z M14,6c0-2.2-1.8-4-4-4S6,3.8,6,6s1.8,4,4,4S14,8.2,14,6z"/>
                                 </svg> </span><span class="mobile-menu__indicator-title">Account</span> </a><a
-                            class="mobile-menu__indicator" href="cart.html"><span
-                                class="mobile-menu__indicator-icon"><svg width="20" height="20">
+                                class="mobile-menu__indicator" href="cart.html"><span
+                                    class="mobile-menu__indicator-icon"><svg width="20" height="20">
                                     <circle cx="7" cy="17" r="2"/>
                                     <circle cx="15" cy="17" r="2"/>
                                     <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6
  V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4
  C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/>
                                 </svg> <span class="mobile-menu__indicator-counter">3</span> </span><span
-                                class="mobile-menu__indicator-title">Cart</span> </a><a
-                            class="mobile-menu__indicator" href="account-garage.html"><span
-                                class="mobile-menu__indicator-icon"><svg width="20" height="20">
+                                    class="mobile-menu__indicator-title">Cart</span> </a><a
+                                class="mobile-menu__indicator" href="account-garage.html"><span
+                                    class="mobile-menu__indicator-icon"><svg width="20" height="20">
                                     <path d="M6.6,2c2,0,4.8,0,6.8,0c1,0,2.9,0.8,3.6,2.2C17.7,5.7,17.9,7,18.4,7C20,7,20,8,20,8v1h-1v7.5c0,0.8-0.7,1.5-1.5,1.5h-1
  c-0.8,0-1.5-0.7-1.5-1.5V16H5v0.5C5,17.3,4.3,18,3.5,18h-1C1.7,18,1,17.3,1,16.5V16V9H0V8c0,0,0.1-1,1.6-1C2.1,7,2.3,5.7,3,4.2
  C3.7,2.8,5.6,2,6.6,2z M13.3,4H6.7c-0.8,0-1.4,0-2,0.7c-0.5,0.6-0.8,1.5-1,2C3.6,7.1,3.5,7.9,3.7,8C4.5,8.4,6.1,9,10,9
@@ -780,7 +818,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Home</div>
@@ -795,7 +833,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                                          class="" data-mobile-menu-trigger>Header
                                                     Spaceship
                                                     <svg
-                                                        width="7" height="11">
+                                                            width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
  C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
                                                     </svg>
@@ -804,11 +842,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Header Spaceship
@@ -817,19 +855,19 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-spaceship-variant-one.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant
+                                                                            href="header-spaceship-variant-one.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant
                                                                         One</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-spaceship-variant-two.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant
+                                                                            href="header-spaceship-variant-two.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant
                                                                         Two</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-spaceship-variant-three.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant
+                                                                            href="header-spaceship-variant-three.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant
                                                                         Three</a></li>
                                                             </ul>
                                                         </div>
@@ -840,7 +878,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                                          class="" data-mobile-menu-trigger>Header
                                                     Classic
                                                     <svg
-                                                        width="7" height="11">
+                                                            width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
  C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
                                                     </svg>
@@ -849,11 +887,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Header Classic</div>
@@ -861,26 +899,30 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-classic-variant-one.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant One</a></li>
+                                                                            href="header-classic-variant-one.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant One</a>
+                                                                </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-classic-variant-two.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant Two</a></li>
+                                                                            href="header-classic-variant-two.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant Two</a>
+                                                                </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-classic-variant-three.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant
+                                                                            href="header-classic-variant-three.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant
                                                                         Three</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-classic-variant-four.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant Four</a></li>
+                                                                            href="header-classic-variant-four.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant Four</a>
+                                                                </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="header-classic-variant-five.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant Five</a></li>
+                                                                            href="header-classic-variant-five.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant Five</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -889,7 +931,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                             <li data-mobile-menu-item><a href="mobile-header-variant-one.html"
                                                                          class="" data-mobile-menu-trigger>Mobile Header
                                                     <svg
-                                                        width="7" height="11">
+                                                            width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
  C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
                                                     </svg>
@@ -898,11 +940,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Mobile Header</div>
@@ -910,13 +952,15 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="mobile-header-variant-one.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant One</a></li>
+                                                                            href="mobile-header-variant-one.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant One</a>
+                                                                </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="mobile-header-variant-two.html"
-                                                                        class=""
-                                                                        data-mobile-menu-trigger>Variant Two</a></li>
+                                                                            href="mobile-header-variant-two.html"
+                                                                            class=""
+                                                                            data-mobile-menu-trigger>Variant Two</a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -940,7 +984,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Shop</div>
@@ -959,11 +1003,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Category</div>
@@ -971,8 +1015,8 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-3-columns-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>3
+                                                                            href="category-3-columns-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>3
                                                                         Columns Sidebar</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a href="#"
@@ -981,29 +1025,29 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                                         Columns Sidebar</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-5-columns-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>5
+                                                                            href="category-5-columns-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>5
                                                                         Columns Sidebar</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-4-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>4
+                                                                            href="category-4-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>4
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-5-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>5
+                                                                            href="category-5-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>5
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-6-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>6
+                                                                            href="category-6-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>6
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-7-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>7
+                                                                            href="category-7-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>7
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="category-right-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Right
+                                                                            href="category-right-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Right
                                                                         Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -1022,11 +1066,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Shop Grid</div>
@@ -1034,16 +1078,16 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-6-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>6
+                                                                            href="shop-grid-6-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>6
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-5-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>5
+                                                                            href="shop-grid-5-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>5
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-4-columns-full.html"
-                                                                        class="" data-mobile-menu-trigger>4
+                                                                            href="shop-grid-4-columns-full.html"
+                                                                            class="" data-mobile-menu-trigger>4
                                                                         Columns Full</a></li>
                                                                 <li data-mobile-menu-item><a href="#"
                                                                                              class=""
@@ -1051,8 +1095,8 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                                         Columns Sidebar</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="shop-grid-3-columns-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>3
+                                                                            href="shop-grid-3-columns-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>3
                                                                         Columns Sidebar</a>
                                                                 </li>
                                                             </ul>
@@ -1080,11 +1124,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Product</div>
@@ -1097,8 +1141,8 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                                         Width</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="product-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Left
+                                                                            href="product-sidebar.html" class=""
+                                                                            data-mobile-menu-trigger>Left
                                                                         Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -1136,7 +1180,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Blog</div>
@@ -1146,7 +1190,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                             <li data-mobile-menu-item><a href="blog-classic-right-sidebar.html"
                                                                          class="" data-mobile-menu-trigger>Blog Classic
                                                     <svg
-                                                        width="7" height="11">
+                                                            width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
  C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
                                                     </svg>
@@ -1155,11 +1199,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Blog Classic</div>
@@ -1167,12 +1211,12 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="blog-classic-left-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Left
+                                                                            href="blog-classic-left-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Left
                                                                         Sidebar</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="blog-classic-right-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Right
+                                                                            href="blog-classic-right-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Right
                                                                         Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -1182,7 +1226,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                             <li data-mobile-menu-item><a href="blog-list-right-sidebar.html"
                                                                          class="" data-mobile-menu-trigger>Blog List
                                                     <svg
-                                                        width="7" height="11">
+                                                            width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
  C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
                                                     </svg>
@@ -1191,11 +1235,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Blog List</div>
@@ -1203,12 +1247,12 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="blog-list-left-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Left
+                                                                            href="blog-list-left-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Left
                                                                         Sidebar</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="blog-list-right-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Right
+                                                                            href="blog-list-right-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Right
                                                                         Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -1218,7 +1262,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                             <li data-mobile-menu-item><a href="blog-grid-right-sidebar.html"
                                                                          class="" data-mobile-menu-trigger>Blog Grid
                                                     <svg
-                                                        width="7" height="11">
+                                                            width="7" height="11">
                                                         <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
  C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
                                                     </svg>
@@ -1227,11 +1271,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Blog Grid</div>
@@ -1239,12 +1283,12 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                         <div class="mobile-menu__panel-body">
                                                             <ul class="mobile-menu__links">
                                                                 <li data-mobile-menu-item><a
-                                                                        href="blog-grid-left-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Left
+                                                                            href="blog-grid-left-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Left
                                                                         Sidebar</a></li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="blog-grid-right-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Right
+                                                                            href="blog-grid-right-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Right
                                                                         Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -1263,11 +1307,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                     <div class="mobile-menu__panel mobile-menu__panel--hidden">
                                                         <div class="mobile-menu__panel-header">
                                                             <button
-                                                                class="mobile-menu__panel-back" type="button">
+                                                                    class="mobile-menu__panel-back" type="button">
                                                                 <svg
-                                                                    width="7" height="11">
+                                                                        width="7" height="11">
                                                                     <path
-                                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                                                 </svg>
                                                             </button>
                                                             <div class="mobile-menu__panel-title">Post Page</div>
@@ -1280,11 +1324,12 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                                         Width</a>
                                                                 </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="post-left-sidebar.html" class=""
-                                                                        data-mobile-menu-trigger>Left Sidebar</a></li>
+                                                                            href="post-left-sidebar.html" class=""
+                                                                            data-mobile-menu-trigger>Left Sidebar</a>
+                                                                </li>
                                                                 <li data-mobile-menu-item><a
-                                                                        href="post-right-sidebar.html"
-                                                                        class="" data-mobile-menu-trigger>Right
+                                                                            href="post-right-sidebar.html"
+                                                                            class="" data-mobile-menu-trigger>Right
                                                                         Sidebar</a></li>
                                                             </ul>
                                                         </div>
@@ -1314,7 +1359,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Account</div>
@@ -1364,7 +1409,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                                 type="button">
                                             <svg width="7" height="11">
                                                 <path
-                                                    d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                        d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
                                             </svg>
                                         </button>
                                         <div class="mobile-menu__panel-title">Pages</div>
@@ -1394,8 +1439,8 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                             </div>
                         </li>
                         <li data-mobile-menu-item><a
-                                href="https://themeforest.net/item/redparts-auto-parts-html-template/24735474"
-                                class="highlight" target="_blank" data-mobile-menu-trigger>Buy Theme</a></li>
+                                    href="https://themeforest.net/item/redparts-auto-parts-html-template/24735474"
+                                    class="highlight" target="_blank" data-mobile-menu-trigger>Buy Theme</a></li>
                     </ul>
                     <div class="mobile-menu__spring"></div>
                     <div class="mobile-menu__divider"></div>
@@ -1502,10 +1547,10 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <form action="#" class="footer-newsletter__form"><label class="sr-only"
                                                                                         for="footer-newsletter-address">Email
                                         Address</label> <input
-                                        type="text" class="footer-newsletter__form-input"
-                                        id="footer-newsletter-address" placeholder="Email Address...">
+                                            type="text" class="footer-newsletter__form-input"
+                                            id="footer-newsletter-address" placeholder="Email Address...">
                                     <button
-                                        class="footer-newsletter__form-button">Subscribe
+                                            class="footer-newsletter__form-button">Subscribe
                                     </button>
                                 </form>
                                 <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on
@@ -1514,15 +1559,15 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <div class="footer-newsletter__social-links social-links">
                                     <ul class="social-links__list">
                                         <li class="social-links__item social-links__item--facebook"><a
-                                                target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                         <li class="social-links__item social-links__item--twitter"><a
-                                                target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                    target="_blank"><i class="fab fa-twitter"></i></a></li>
                                         <li class="social-links__item social-links__item--youtube"><a
-                                                target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                                    target="_blank"><i class="fab fa-youtube"></i></a></li>
                                         <li class="social-links__item social-links__item--instagram"><a
-                                                target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
                                         <li class="social-links__item social-links__item--rss"><a
-                                                target="_blank"><i class="fas fa-rss"></i></a></li>
+                                                    target="_blank"><i class="fas fa-rss"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1555,7 +1600,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
             <div class="modal-content">
                 <button type="button" class="vehicle-picker-modal__close">
                     <svg
-                        width="12" height="12">
+                            width="12" height="12">
                         <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
  c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
  C11.2,9.8,11.2,10.4,10.8,10.8z"/>
@@ -1565,7 +1610,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="vehicle-picker-modal__title card-title">Add A Vehicle</div>
                     <div class="vehicle-form vehicle-form--layout--modal">
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Year">
+                                    class="form-control form-control-select2" aria-label="Year">
                                 <option value="none">Select Year</option>
                                 <option>2010</option>
                                 <option>2011</option>
@@ -1580,7 +1625,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <option>2020</option>
                             </select></div>
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Brand" disabled="disabled">
+                                    class="form-control form-control-select2" aria-label="Brand" disabled="disabled">
                                 <option value="none">Select Brand</option>
                                 <option>Audi</option>
                                 <option>BMW</option>
@@ -1592,7 +1637,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <option>Toyota</option>
                             </select></div>
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Model" disabled="disabled">
+                                    class="form-control form-control-select2" aria-label="Model" disabled="disabled">
                                 <option value="none">Select Model</option>
                                 <option>Explorer</option>
                                 <option>Focus S</option>
@@ -1600,7 +1645,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <option>Mustang</option>
                             </select></div>
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Engine" disabled="disabled">
+                                    class="form-control form-control-select2" aria-label="Engine" disabled="disabled">
                                 <option value="none">Select Engine</option>
                                 <option>Gas 1.6L 125 hp AT/L4</option>
                                 <option>Diesel 2.5L 200 hp AT/L5</option>
@@ -1629,7 +1674,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
             <div class="modal-content">
                 <button type="button" class="vehicle-picker-modal__close">
                     <svg
-                        width="12" height="12">
+                            width="12" height="12">
                         <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
  c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
  C11.2,9.8,11.2,10.4,10.8,10.8z"/>
@@ -1640,11 +1685,11 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="vehicle-picker-modal__text">Select a vehicle to find exact fit parts</div>
                     <div class="vehicles-list">
                         <div class="vehicles-list__body"><label class="vehicles-list__item"><span
-                                    class="vehicles-list__item-radio input-radio"><span
-                                        class="input-radio__body"><input class="input-radio__input"
-                                                                         name="header-vehicle" type="radio"> <span
-                                            class="input-radio__circle"></span> </span></span><span
-                                    class="vehicles-list__item-info"><span class="vehicles-list__item-name">2011
+                                        class="vehicles-list__item-radio input-radio"><span
+                                            class="input-radio__body"><input class="input-radio__input"
+                                                                             name="header-vehicle" type="radio"> <span
+                                                class="input-radio__circle"></span> </span></span><span
+                                        class="vehicles-list__item-info"><span class="vehicles-list__item-name">2011
                                         Ford
                                         Focus S</span> <span class="vehicles-list__item-details">Engine 2.0L 1742DA L4
                                         FI Turbo</span> </span>
@@ -1652,15 +1697,15 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                         class="vehicles-list__item-remove">
                                     <svg width="16" height="16">
                                         <path
-                                            d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
+                                                d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
                                     </svg>
                                 </button>
                             </label> <label class="vehicles-list__item"><span
-                                    class="vehicles-list__item-radio input-radio"><span
-                                        class="input-radio__body"><input class="input-radio__input"
-                                                                         name="header-vehicle" type="radio"> <span
-                                            class="input-radio__circle"></span> </span></span><span
-                                    class="vehicles-list__item-info"><span class="vehicles-list__item-name">2019
+                                        class="vehicles-list__item-radio input-radio"><span
+                                            class="input-radio__body"><input class="input-radio__input"
+                                                                             name="header-vehicle" type="radio"> <span
+                                                class="input-radio__circle"></span> </span></span><span
+                                        class="vehicles-list__item-info"><span class="vehicles-list__item-name">2019
                                         Audi Q7
                                         Premium</span> <span class="vehicles-list__item-details">Engine 3.0L 5626CC L6
                                         QK</span> </span>
@@ -1668,7 +1713,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                         class="vehicles-list__item-remove">
                                     <svg width="16" height="16">
                                         <path
-                                            d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
+                                                d="M2,4V2h3V1h6v1h3v2H2z M13,13c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V5h10V13z"/>
                                     </svg>
                                 </button>
                             </label></div>
@@ -1686,7 +1731,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <div class="vehicle-picker-modal__title card-title">Add A Vehicle</div>
                     <div class="vehicle-form vehicle-form--layout--modal">
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Year">
+                                    class="form-control form-control-select2" aria-label="Year">
                                 <option value="none">Select Year</option>
                                 <option>2010</option>
                                 <option>2011</option>
@@ -1701,7 +1746,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <option>2020</option>
                             </select></div>
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Brand" disabled="disabled">
+                                    class="form-control form-control-select2" aria-label="Brand" disabled="disabled">
                                 <option value="none">Select Brand</option>
                                 <option>Audi</option>
                                 <option>BMW</option>
@@ -1713,7 +1758,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <option>Toyota</option>
                             </select></div>
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Model" disabled="disabled">
+                                    class="form-control form-control-select2" aria-label="Model" disabled="disabled">
                                 <option value="none">Select Model</option>
                                 <option>Explorer</option>
                                 <option>Focus S</option>
@@ -1721,7 +1766,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 <option>Mustang</option>
                             </select></div>
                         <div class="vehicle-form__item vehicle-form__item--select"><select
-                                class="form-control form-control-select2" aria-label="Engine" disabled="disabled">
+                                    class="form-control form-control-select2" aria-label="Engine" disabled="disabled">
                                 <option value="none">Select Engine</option>
                                 <option>Gas 1.6L 125 hp AT/L4</option>
                                 <option>Diesel 2.5L 200 hp AT/L5</option>
@@ -1737,7 +1782,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                                 class="btn btn-sm btn-secondary" data-to-panel="list">Back to list
                         </button>
                         <button
-                            type="button" class="btn btn-sm btn-primary">Add A Vehicle
+                                type="button" class="btn btn-sm btn-primary">Add A Vehicle
                         </button>
                     </div>
                 </div>
@@ -1763,7 +1808,7 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
                     <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
                     <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
                     <button
-                        class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
                             <div class="pswp__preloader__cut">

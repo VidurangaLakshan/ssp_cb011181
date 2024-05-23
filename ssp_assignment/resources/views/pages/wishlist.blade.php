@@ -78,12 +78,13 @@
                                 >
                                     <div class="image image--type--product">
                                         <a href="{{ route('product.show', $wishlistItem->product_id) }}"
-                                           class="image__body"
-                                        ><img
+                                           class="image__body">
+                                            <img
                                                 class="image__tag"
                                                 src="{{ asset($wishlistItem->product->image) }}"
                                                 alt=""
-                                            /></a>
+                                            />
+                                        </a>
                                     </div>
                                 </td>
                                 <td
@@ -124,11 +125,6 @@
                                 <td
                                     class="wishlist__column wishlist__column--body wishlist__column--button"
                                 >
-                                    @if ($wishlistItem->product->stock > 0 || $wishlistItem->product->status == "active")
-                                        <button type="button" class="btn btn-sm btn-primary">
-                                            Add to Cart
-                                        </button>
-                                    @endif
                                 </td>
                                 <td
                                     class="wishlist__column wishlist__column--body wishlist__column--remove"

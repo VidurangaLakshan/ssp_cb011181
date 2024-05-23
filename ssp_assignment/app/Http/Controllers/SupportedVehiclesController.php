@@ -81,10 +81,11 @@ class SupportedVehiclesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(SupportedVehicles $supportedVehicles)
+    public function destroy(SupportedVehicles $supportedVehicle)
     {
-        $supportedVehicles->delete();
 
-        return redirect('/admin/supported-vehicles');
+        $supportedVehicle->delete();
+
+        return redirect('/supported-vehicles');
     }
 }

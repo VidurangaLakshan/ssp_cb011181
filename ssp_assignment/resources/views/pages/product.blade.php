@@ -9,12 +9,14 @@
                             <li class="breadcrumb__spaceship-safe-area" role="presentation"></li>
                             <li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first"><a
                                     href="/" class="breadcrumb__item-link">Home</a></li>
-                            <li class="breadcrumb__item breadcrumb__item--parent"><a href="#"
-                                                                                     class="breadcrumb__item-link">{{ $product->category->name }}</a>
+
+                            <li class="breadcrumb__item breadcrumb__item--parent"><a
+                                    href="/shop/{{ urlencode($product->category->name) }}"
+                                    class="breadcrumb__item-link">{{ $product->category->name }}</a>
                             </li>
                             <li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last"
                                 aria-current="page"><span
-                                    class="breadcrumb__item-link">{{ $product->name }}</span></li>
+                                        class="breadcrumb__item-link">{{ $product->name }}</span></li>
                         </ol>
                     </nav>
                 </div>
@@ -62,7 +64,7 @@
                                     <div class="product-gallery__thumbnails">
                                         <div class="owl-carousel">
                                             <div
-                                                class="product-gallery__thumbnails-item image image--type--product">
+                                                    class="product-gallery__thumbnails-item image image--type--product">
                                                 <div class="image__body"><img class="image__tag"
                                                                               src="{{ asset($product->image) }}"
                                                                               alt=""></div>
@@ -70,7 +72,7 @@
 
                                             @if ($product->image2 != "uploads/products/" && $product->image2 != null)
                                                 <div
-                                                    class="product-gallery__thumbnails-item image image--type--product">
+                                                        class="product-gallery__thumbnails-item image image--type--product">
                                                     <div class="image__body"><img class="image__tag"
                                                                                   src="{{ asset($product->image2) }}"
                                                                                   alt=""></div>
@@ -79,7 +81,7 @@
 
                                             @if ($product->image3 != "uploads/products/" && $product->image3 != null)
                                                 <div
-                                                    class="product-gallery__thumbnails-item image image--type--product">
+                                                        class="product-gallery__thumbnails-item image image--type--product">
                                                     <div class="image__body"><img class="image__tag"
                                                                                   src="{{ asset($product->image3) }}"
                                                                                   alt=""></div>
@@ -88,7 +90,7 @@
 
                                             @if ($product->image4 != "uploads/products/" && $product->image4 != null)
                                                 <div
-                                                    class="product-gallery__thumbnails-item image image--type--product">
+                                                        class="product-gallery__thumbnails-item image image--type--product">
                                                     <div class="image__body"><img class="image__tag"
                                                                                   src="{{ asset($product->image4) }}"
                                                                                   alt=""></div>
@@ -103,39 +105,61 @@
                                     <h1 class="product__title">{{ $product->name }}</h1>
                                     <div class="product__subtitle">
 
-                                        <div
-                                            class="status-badge status-badge--style--success product__fit status-badge--has-icon status-badge--has-text">
-                                            <div class="status-badge__body">
-                                                <div class="status-badge__icon">
-                                                    <svg width="13" height="13">
-                                                        <path
-                                                            d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="status-badge__text">Part Fit for 2011 Ford Focus S</div>
-                                                <div class="status-badge__tooltip" tabindex="0"
-                                                     data-toggle="tooltip"
-                                                     title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {{--                                        <div--}}
+                                        {{--                                            class="status-badge status-badge--style--success product__fit status-badge--has-icon status-badge--has-text">--}}
+                                        {{--                                            <div class="status-badge__body">--}}
+                                        {{--                                                <div class="status-badge__icon">--}}
+                                        {{--                                                    <svg width="13" height="13">--}}
+                                        {{--                                                        <path--}}
+                                        {{--                                                            d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
+                                        {{--                                                    </svg>--}}
+                                        {{--                                                </div>--}}
+                                        {{--                                                <div class="status-badge__text">Part Fit for 2011 Ford Focus S</div>--}}
+                                        {{--                                                <div class="status-badge__tooltip" tabindex="0"--}}
+                                        {{--                                                     data-toggle="tooltip"--}}
+                                        {{--                                                     title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
+                                        {{--                                                </div>--}}
+                                        {{--                                            </div>--}}
+                                        {{--                                        </div>--}}
 
-                                        <div
-                                            class="status-badge status-badge--style--success product__fit status-badge--has-icon status-badge--has-text">
-                                            <div class="status-badge__body">
-                                                <div class="status-badge__icon">
-                                                    <svg width="13" height="13">
-                                                        <path
-                                                            d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>
-                                                    </svg>
-                                                </div>
-                                                <div class="status-badge__text">Part Fit for 2011 Ford Focus S</div>
-                                                <div class="status-badge__tooltip" tabindex="0"
-                                                     data-toggle="tooltip"
-                                                     title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        @php
+
+                                            // search the supported vehicles for the product
+                                             $supportedVehicles = DB::table('supported_vehicles')->where('product_id', $product->id)->get();
+
+                                             // get all the garage vehicles
+                                             $garageVehicles = DB::table('garages')->where('user_id', Auth::id())->get();
+
+                                        @endphp
+
+{{--                                        // check if the product is in the garage--}}
+
+
+                                        @foreach($garageVehicles as $garageVehicle)
+                                            @foreach($supportedVehicles as $supportedVehicle)
+                                                @if ($garageVehicle->model == $supportedVehicle->model && $garageVehicle->year == $supportedVehicle->year && $garageVehicle->brand == $supportedVehicle->brand)
+                                                    <div
+                                                            class="status-badge status-badge--style--success product__fit status-badge--has-icon status-badge--has-text">
+                                                        <div class="status-badge__body">
+                                                            <div class="status-badge__icon">
+                                                                <svg width="13" height="13">
+                                                                    <path
+                                                                            d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="status-badge__text">Part Fit
+                                                                for {{ $garageVehicle->year }} {{ $garageVehicle->brand }} {{ $garageVehicle->model }}</div>
+                                                            <div class="status-badge__tooltip" tabindex="0"
+                                                                 data-toggle="tooltip"
+                                                                 title="Part&#x20;Fit&#x20;for&#x20;{{ $garageVehicle->year }}&#x20;{{ $garageVehicle->brand }}&#x20;{{ $garageVehicle->model }}&#x20;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @endforeach
+                                        @endforeach
+
 
                                     </div>
                                 </div>
@@ -163,7 +187,7 @@
 
                                                 </div>
                                                 <div
-                                                    class="status-badge status-badge--style--success product__stock status-badge--has-text">
+                                                        class="status-badge status-badge--style--success product__stock status-badge--has-text">
                                                     <div class="status-badge__body">
                                                         @if ($product->stock != "0")
                                                             <div class="status-badge__text">In Stock</div>
@@ -186,25 +210,9 @@
                                         <div style="margin: 10px 0;"></div>
 
                                         <div class="product__actions">
-                                            <div class="product__actions-item product__actions-item--quantity">
-                                                <div class="input-number">
-                                                    <input class="input-number__input form-control form-control-lg"
-                                                           type="number" min="1" value="1" id="product_buy_count"
-                                                           disabled>
-                                                    <div class="input-number__add"></div>
-                                                    <div class="input-number__sub"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product__actions-item product__actions-item--addtocart">
-                                                @if ($product->stock == "0")
-                                                    <button class="btn btn-primary btn-lg btn-block" disabled>Add to
-                                                        Cart
-                                                    </button>
-                                                @else
-                                                    <button class="btn btn-primary btn-lg btn-block">Add to Cart
-                                                    </button>
-                                                @endif
-                                            </div>
+
+                                            @livewire('add-to-cart', ['product' => $product])
+
                                             <div class="product__actions-divider"></div>
 
 
@@ -220,10 +228,6 @@
                                                 // use php to access the value of the input field
                                             @endphp
 
-                                            <script>
-                                                let $quantity = document.getElementById('product_buy_count').value;
-                                                console.log($quantity);
-                                            </script>
 
                                             @livewire('user-wishlist', ['product' => $product])
 
@@ -269,13 +273,13 @@
 	s3.3,1.5,3.3,3.3S15.4,42.9,13.6,42.9z M40,42.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3S41.8,42.9,40,42.9z
 	 M45.6,33.3c-0.5,0-0.9-0.4-0.9-0.9v-0.9h1.7v1.7L45.6,33.3L45.6,33.3z"/>
                                                         <path
-                                                            d="M13.6,38.1c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6s1.6-0.7,1.6-1.6S14.4,38.1,13.6,38.1z"/>
+                                                                d="M13.6,38.1c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6s1.6-0.7,1.6-1.6S14.4,38.1,13.6,38.1z"/>
                                                         <path
-                                                            d="M40,38.1c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6S40.9,38.1,40,38.1z"/>
+                                                                d="M40,38.1c-0.9,0-1.6,0.7-1.6,1.6s0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6S40.9,38.1,40,38.1z"/>
                                                         <path
-                                                            d="M19.2,35.6c0,0.4,0.3,0.8,0.8,0.8h11.2c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8H20C19.6,34.9,19.2,35.2,19.2,35.6z"/>
+                                                                d="M19.2,35.6c0,0.4,0.3,0.8,0.8,0.8h11.2c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8H20C19.6,34.9,19.2,35.2,19.2,35.6z"/>
                                                         <path
-                                                            d="M2.4,33.2H12c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8H2.4c-0.4,0-0.8,0.3-0.8,0.8S1.9,33.2,2.4,33.2z"/>
+                                                                d="M2.4,33.2H12c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8H2.4c-0.4,0-0.8,0.3-0.8,0.8S1.9,33.2,2.4,33.2z"/>
                                                         <path d="M12,21.9c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8H8.8c-0.4,0-0.8,0.3-0.8,0.8v6.4c0,0.4,0.3,0.8,0.8,0.8
 	c0.4,0,0.8-0.3,0.8-0.8v-2.5h1.7c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8H9.5v-1.7L12,21.9L12,21.9z"/>
                                                         <path d="M19.1,23.2c0-1.5-1.2-2.8-2.8-2.8h-2c-0.4,0-0.8,0.3-0.8,0.8v6.4c0,0.4,0.3,0.8,0.8,0.8c0.4,0,0.8-0.3,0.8-0.8V26h1.3
@@ -285,7 +289,7 @@
 	c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-2.5v-1.7c0,0,0,0,0,0h1.6c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-1.6c0,0,0,0,0,0v-1.7
 	L24,21.9L24,21.9z"/>
                                                         <path
-                                                            d="M29.6,21.9c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-3.2c-0.4,0-0.8,0.3-0.8,0.8v6.4c0,0.4,0.3,0.8,0.8,0.8h3.2
+                                                                d="M29.6,21.9c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-3.2c-0.4,0-0.8,0.3-0.8,0.8v6.4c0,0.4,0.3,0.8,0.8,0.8h3.2
 	c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-2.5v-1.7H28c0.4,0,0.8-0.3,0.8-0.8s-0.3-0.8-0.8-0.8h-0.9v-1.7L29.6,21.9L29.6,21.9z"/>
                                                     </svg>
                                                 </div>
@@ -301,7 +305,7 @@
                                                     <svg width="48" height="48"
                                                          viewBox="0 0 48 48">
                                                         <path
-                                                            d="M46.218,18.168h-0.262v-0.869c0-1.175-1.211-1.766-2.453-1.766c-0.521,0-0.985,0.094-1.366,0.263
+                                                                d="M46.218,18.168h-0.262v-0.869c0-1.175-1.211-1.766-2.453-1.766c-0.521,0-0.985,0.094-1.366,0.263
     c0.015-0.028,2.29-4.591,2.303-4.62c0.968-2.263-3.041-4.024-4.372-1.449l-5.184,10.166c-0.35,0.648-0.364,1.449,0.033,2.081
     c-0.206-0.107-0.432-0.166-0.668-0.166h-4.879c1.555-1.597,6.638-3.535,6.638-8.011c0-1.599-0.676-3.02-1.903-4.002
     c-1.088-0.87-2.52-1.35-4.033-1.35c-2.802,0-5.779,1.758-5.779,5.015c0,2.195,1.426,2.522,2.275,2.522
@@ -336,7 +340,7 @@
     L25.247,43.573z M26.622,30.977c1.54-0.495,3.282,0.119,4.142,1.525l2.538,4.145c0.865,1.413,0.611,3.242-0.524,4.383
     L26.622,30.977z M26.622,30.977"/>
                                                         <path
-                                                            d="M0.403,23.192c0.998,3.783,2.422,7.199,4.232,10.155c1.81,2.956,4.206,5.777,7.121,8.386
+                                                                d="M0.403,23.192c0.998,3.783,2.422,7.199,4.232,10.155c1.81,2.956,4.206,5.777,7.121,8.386
     c1.613,1.443,3.59,2.435,5.717,2.868c0.377,0.078,0.751-0.165,0.83-0.549c0.078-0.381-0.168-0.752-0.549-0.829
     c-1.883-0.383-3.632-1.261-5.06-2.538c-2.813-2.517-5.121-5.233-6.859-8.072c-1.739-2.839-3.108-6.13-4.071-9.78
     c-0.902-3.419-0.07-7.084,2.228-9.803c0.632-0.748,0.954-1.704,0.906-2.69C4.834,9.03,5.483,7.795,6.592,7.116l2.742-1.679
@@ -371,15 +375,15 @@
 	c-0.5,0-0.9-0.1-1.4-0.3c0.6-0.8,0.9-1.7,0.9-2.7c0-0.4-0.4-0.8-0.8-0.8s-0.8,0.4-0.8,0.8c0,0.6-0.2,1.2-0.5,1.6
 	c-0.3-0.5-0.5-1.1-0.5-1.6c0-1.7,1.4-3.1,3.1-3.1C36.4,11.9,37.8,13.3,37.8,15z"/>
                                                         <path
-                                                            d="M6,24.1c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h6.9c0.4,0,0.8-0.4,0.8-0.8c0-0.4-0.4-0.8-0.8-0.8H6z"/>
+                                                                d="M6,24.1c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h6.9c0.4,0,0.8-0.4,0.8-0.8c0-0.4-0.4-0.8-0.8-0.8H6z"/>
                                                         <path
-                                                            d="M30.9,29.2H6c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h24.9c0.4,0,0.8-0.4,0.8-0.8S31.3,29.2,30.9,29.2z"/>
+                                                                d="M30.9,29.2H6c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h24.9c0.4,0,0.8-0.4,0.8-0.8S31.3,29.2,30.9,29.2z"/>
                                                         <path
-                                                            d="M16.3,24.1c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h6.9c0.4,0,0.8-0.4,0.8-0.8c0-0.4-0.4-0.8-0.8-0.8H16.3z"/>
+                                                                d="M16.3,24.1c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h6.9c0.4,0,0.8-0.4,0.8-0.8c0-0.4-0.4-0.8-0.8-0.8H16.3z"/>
                                                         <path
-                                                            d="M31.7,24.1h-5.2c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h5.2c0.4,0,0.8-0.4,0.8-0.8C32.5,24.4,32.2,24.1,31.7,24.1z"/>
+                                                                d="M31.7,24.1h-5.2c-0.4,0-0.8,0.4-0.8,0.8c0,0.4,0.4,0.8,0.8,0.8h5.2c0.4,0,0.8-0.4,0.8-0.8C32.5,24.4,32.2,24.1,31.7,24.1z"/>
                                                         <path
-                                                            d="M46.3,30.2v-3.6c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6v3.6c-1,0.3-1.7,1.3-1.7,2.4v7.7c0,1.4,1.1,2.5,2.5,2.5h10.3
+                                                                d="M46.3,30.2v-3.6c0-3.3-2.7-6-6-6c-3.3,0-6,2.7-6,6v3.6c-1,0.3-1.7,1.3-1.7,2.4v7.7c0,1.4,1.1,2.5,2.5,2.5h10.3
 	c1.4,0,2.5-1.1,2.5-2.5v-7.7C48,31.5,47.3,30.5,46.3,30.2z M40.3,22.2c2.4,0,4.3,2,4.3,4.3v3.5H36v-3.5C36,24.2,37.9,22.2,40.3,22.2
 	z M46.4,40.3c0,0.5-0.4,0.9-0.9,0.9H35.2c-0.5,0-0.9-0.4-0.9-0.9v-7.7c0-0.5,0.4-0.9,0.9-0.9h10.3c0.5,0,0.9,0.4,0.9,0.9V40.3z"/>
                                                         <path d="M40.3,33.5c-1.2,0-2.1,0.9-2.1,2.1c0,0.9,0.5,1.6,1.3,1.9v1.1c0,0.4,0.4,0.8,0.8,0.8s0.8-0.4,0.8-0.8v-1.1
@@ -431,7 +435,7 @@
                                 <div class="product__tabs product-tabs product-tabs--layout--full">
                                     <ul class="product-tabs__list">
                                         <li class="product-tabs__item product-tabs__item--active"><a
-                                                href="#product-tab-description">Description</a></li>
+                                                    href="#product-tab-description">Description</a></li>
                                     </ul>
                                     <div class="product-tabs__content">
                                         <div class="product-tabs__pane product-tabs__pane--active"

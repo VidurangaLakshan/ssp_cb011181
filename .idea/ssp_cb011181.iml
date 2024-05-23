@@ -129,6 +129,7 @@
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/_laravel_idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

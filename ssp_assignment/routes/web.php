@@ -244,6 +244,9 @@ Route::get('/shop', function () {
         'categories' => \App\Models\Category::all(),
         'currentCategory' => 'All Products',
         'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+        'setvehicleModel' => '',
+        'setvehicleBrand' => '',
+        'setvehicleYear' => '',
     ]);
 })->name('shop');
 
@@ -258,6 +261,9 @@ Route::get('/shop/{name}', function () {
         'categories' => \App\Models\Category::all(),
         'currentCategory' => $category->name,
         'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+        'setvehicleModel' => '',
+        'setvehicleBrand' => '',
+        'setvehicleYear' => '',
     ]);
 });
 
@@ -272,41 +278,42 @@ Route::get('/shop/search/{name}', function () {
         'categories' => \App\Models\Category::all(),
         'currentCategory' => 'Search Results for "' . request()->name . '"',
         'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+        'setvehicleModel' => '',
+        'setvehicleBrand' => '',
+        'setvehicleYear' => '',
     ]);
 })->name('search');
 
 
+Route::get('/filter', [\App\Http\Controllers\FilterController::class, 'index']);
 
 
 
 
-
-Route::get('/shop/filter/{token}', function () {
-
-    $products = \App\Models\Product::where('name', 'like', '%' . request()->name . '%')->where('status', '=', 'active')->get();
-
-    // get the supported vehicles
-    $supportedVehicles = \App\Models\SupportedVehicles::where('brand', request()->brand)->where('model', request()->model)->where('year', request()->year)->get();
-
-
-    $products = $products->filter(function ($product) use ($supportedVehicles) {
-        foreach ($supportedVehicles as $supportedVehicle) {
-            if ($product->id == $supportedVehicle->product_id) {
-                return $product;
-            }
-        }
-    });
-
-    dd($products);
-
-    return view('pages.shop', [
-        'products' => $products,
-        'latestProducts' => \App\Models\Product::orderBy('created_at','DESC')->where('status', '=', 'active')->take(5)->get(),
-        'categories' => \App\Models\Category::all(),
-        'currentCategory' => 'Search Results for "' . request()->name . '"',
-        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
-    ]);
-})->name('search');
+//Route::get('/shop/filter', function () {
+//
+//    $products = \App\Models\Product::where('name', 'like', '%' . request()->name . '%')->where('status', '=', 'active')->get();
+//
+//    // get the supported vehicles
+//    $supportedVehicles = \App\Models\SupportedVehicles::where('brand', request()->brand)->where('model', request()->model)->where('year', request()->year)->get();
+//
+//
+//    $products = $products->filter(function ($product) use ($supportedVehicles) {
+//        foreach ($supportedVehicles as $supportedVehicle) {
+//            if ($product->id == $supportedVehicle->product_id) {
+//                return $product;
+//            }
+//        }
+//    });
+//
+//    return view('pages.shop', [
+//        'products' => $products,
+//        'latestProducts' => \App\Models\Product::orderBy('created_at','DESC')->where('status', '=', 'active')->take(5)->get(),
+//        'categories' => \App\Models\Category::all(),
+//        'currentCategory' => 'Search Results for "' . request()->name . '"',
+//        'garageVehicles' => \App\Models\Garage::where('user_id', auth()->id())->get(),
+//    ]);
+//})->name('filter');
 
 
 
@@ -358,4 +365,44 @@ Route::get('/checkout', function () {
 
 
 
+
+
+
+
+
+
+
+
+//Route::resource(
+//    'order',
+//    \App\Http\Controllers\OrderController::class
+//);
+
+//Route::resource(
+//    'cart',
+//    \App\Http\Controllers\CartController::class
+//);
+
+Route::get('/cart/create', [
+    \App\Http\Controllers\CartController::class, 'store'
+])->name('cart.create');
+
+Route::get('/cart/edit/{id}/{param2}/{param3}', [
+    \App\Http\Controllers\CartController::class, 'update'
+])->name('cart.update');
+
+Route::get('/cart/remove/{id}', [
+    \App\Http\Controllers\CartController::class, 'remove'
+])->name('cart.remove');
+
+Route::get('/cart/{cart}/checkout', [
+    \App\Http\Controllers\CartController::class, 'checkout'
+])->name('cart.checkout');
+
+
+
+
+Route::post('/order/create', [
+    \App\Http\Controllers\OrderController::class, 'store'
+])->name('order.store');
 

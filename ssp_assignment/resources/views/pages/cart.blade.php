@@ -18,6 +18,20 @@
                 </div>
             </div>
         </div>
+
+
+        @php
+            $cart = \App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
+
+            if ($cart != null){
+                $products = DB::table('cart_product')->where('cart_id', $cart->id)->get();
+            } else {
+                $products = null;
+            }
+
+        @endphp
+
+
         <div class="block">
             <div class="container">
                 <div class="cart">
@@ -34,120 +48,73 @@
                             </tr>
                             </thead>
                             <tbody class="cart-table__body">
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image">
-                                    <div class="image image--type--product"><a href="product-full.html"
-                                                                               class="image__body"><img class="image__tag"
-                                                                                                        src="images/products/product-4-160x160.jpg" alt=""></a></div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--product"><a href="#"
-                                                                                              class="cart-table__product-name">Glossy Gray 19" Aluminium Wheel
-                                        AR-19</a>
-                                    <ul class="cart-table__options">
-                                        <li>Color: Yellow</li>
-                                        <li>Material: Aluminium</li>
-                                    </ul>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Price">
-                                    $699.00</td>
-                                <td class="cart-table__column cart-table__column--quantity"
-                                    data-title="Quantity">
-                                    <div class="cart-table__quantity input-number"><input
-                                            class="form-control input-number__input" type="number" min="1"
-                                            value="2">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Total">
-                                    $1398.00</td>
-                                <td class="cart-table__column cart-table__column--remove"><button type="button"
-                                                                                                  class="cart-table__remove btn btn-sm btn-icon btn-muted"><svg width="12"
-                                                                                                                                                                height="12">
-                                            <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
+                            @if ($products != null && $cart != null)
+                                @foreach($products as $product)
+                                    @php
+                                        $productDetails = \App\Models\Product::where('id', $product->product_id)->first();
+                                    @endphp
+                                    <tr class="cart-table__row">
+                                        <td class="cart-table__column cart-table__column--image">
+                                            <div class="image image--type--product"><a
+                                                    href="{{ route('product.show', $productDetails->id) }}"
+                                                    class="image__body"><img
+                                                        class="image__tag"
+                                                        src="{{ asset($productDetails->image) }}" alt=""></a></div>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--product"><a
+                                                href="{{ route('product.show', $productDetails->id) }}"
+                                                class="cart-table__product-name">{{ $productDetails->name }}</a>
+                                            <ul class="cart-table__options">
+
+                                            </ul>
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--price" data-title="Price">
+                                            Rs.{{ number_format($productDetails->price, 2, '.', ',') }}
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--quantity"
+                                            data-title="Quantity">
+                                            {{ $product->quantity }}
+
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--total" data-title="Total">
+                                            Rs.{{ number_format($product->price, 2, '.', ',') }}
+
+                                        </td>
+                                        <td class="cart-table__column cart-table__column--remove">
+                                            <form action="{{ route('cart.remove', $productDetails->id) }}">
+                                                <button type="submit"
+                                                        class="cart-table__remove btn btn-sm btn-icon btn-muted">
+                                                    <svg width="12"
+                                                         height="12">
+                                                        <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
 	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
-	C11.2,9.8,11.2,10.4,10.8,10.8z" />
-                                        </svg></button></td>
-                            </tr>
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image">
-                                    <div class="image image--type--product"><a href="product-full.html"
-                                                                               class="image__body"><img class="image__tag"
-                                                                                                        src="images/products/product-2-160x160.jpg" alt=""></a></div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--product"><a href="#"
-                                                                                              class="cart-table__product-name">Brandix Brake Kit BDX-750Z370-S</a>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Price">
-                                    $849.00</td>
-                                <td class="cart-table__column cart-table__column--quantity"
-                                    data-title="Quantity">
-                                    <div class="cart-table__quantity input-number"><input
-                                            class="form-control input-number__input" type="number" min="1"
-                                            value="1">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Total">
-                                    $849.00</td>
-                                <td class="cart-table__column cart-table__column--remove"><button type="button"
-                                                                                                  class="cart-table__remove btn btn-sm btn-icon btn-muted"><svg width="12"
-                                                                                                                                                                height="12">
-                                            <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
-	C11.2,9.8,11.2,10.4,10.8,10.8z" />
-                                        </svg></button></td>
-                            </tr>
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image">
-                                    <div class="image image--type--product"><a href="product-full.html"
-                                                                               class="image__body"><img class="image__tag"
-                                                                                                        src="images/products/product-5-160x160.jpg" alt=""></a></div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--product"><a href="#"
-                                                                                              class="cart-table__product-name">Twin Exhaust Pipe From Brandix Z54</a>
-                                    <ul class="cart-table__options">
-                                        <li>Color: True Red</li>
-                                    </ul>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Price">
-                                    $1210.00</td>
-                                <td class="cart-table__column cart-table__column--quantity"
-                                    data-title="Quantity">
-                                    <div class="cart-table__quantity input-number"><input
-                                            class="form-control input-number__input" type="number" min="1"
-                                            value="3">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
-                                    </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Total">
-                                    $3630.00</td>
-                                <td class="cart-table__column cart-table__column--remove"><button type="button"
-                                                                                                  class="cart-table__remove btn btn-sm btn-icon btn-muted"><svg width="12"
-                                                                                                                                                                height="12">
-                                            <path d="M10.8,10.8L10.8,10.8c-0.4,0.4-1,0.4-1.4,0L6,7.4l-3.4,3.4c-0.4,0.4-1,0.4-1.4,0l0,0c-0.4-0.4-0.4-1,0-1.4L4.6,6L1.2,2.6
-	c-0.4-0.4-0.4-1,0-1.4l0,0c0.4-0.4,1-0.4,1.4,0L6,4.6l3.4-3.4c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4L7.4,6l3.4,3.4
-	C11.2,9.8,11.2,10.4,10.8,10.8z" />
-                                        </svg></button></td>
-                            </tr>
+	C11.2,9.8,11.2,10.4,10.8,10.8z"/>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            @endif
+
                             </tbody>
-                            <tfoot class="cart-table__foot">
-                            <tr>
-                                <td colspan="6">
-                                    <div class="cart-table__actions">
-                                        <form class="cart-table__coupon-form form-row">
-                                            <div class="form-group mb-0 col flex-grow-1"></div>
-                                            <div class="form-group mb-0 col-auto">
-</div>
-                                        </form>
-                                        <div class="cart-table__update-button"><a class="btn btn-sm btn-primary"
-                                                                                  href="#">Update Cart</a></div>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tfoot>
+                            {{--                            @if ($products != null)--}}
+                            {{--                                <tfoot class="cart-table__foot">--}}
+                            {{--                                <tr>--}}
+                            {{--                                    <td colspan="6">--}}
+                            {{--                                        <div class="cart-table__actions">--}}
+                            {{--                                            <form class="cart-table__coupon-form form-row">--}}
+                            {{--                                                <div class="form-group mb-0 col flex-grow-1"></div>--}}
+                            {{--                                                <div class="form-group mb-0 col-auto">--}}
+                            {{--                                                </div>--}}
+                            {{--                                            </form>--}}
+                            {{--                                            <div class="cart-table__update-button"><a class="btn btn-sm btn-primary"--}}
+                            {{--                                                                                      href="#">Update Cart</a></div>--}}
+                            {{--                                        </div>--}}
+                            {{--                                    </td>--}}
+                            {{--                                </tr>--}}
+                            {{--                                </tfoot>--}}
+                            {{--                            @endif--}}
                         </table>
                     </div>
                     <div class="cart__totals">
@@ -158,23 +125,41 @@
                                     <thead>
                                     <tr>
                                         <th>Subtotal</th>
-                                        <td>Rs.5,877.00</td>
+                                        @if ($cart != null && $products != null)
+                                            <td>Rs.{{ number_format($cart->sub_total, 2, '.', ',') }}</td>
+                                        @else
+                                            <td>Rs.0.00</td>
+                                        @endif
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <th>Shipping</th>
-                                        <td>Rs.2500.00
-                                        </td>
+
+                                            <td>Rs.0.00</td>
+
                                     </tr>
                                     </tbody>
                                     <tfoot>
                                     <tr>
                                         <th>Total</th>
-                                        <td>Rs.5,902.00</td>
+                                        @if ($cart != null && $products != null)
+
+                                            <td>Rs.{{ number_format($cart->sub_total, 2, '.', ',') }}</td>
+                                        @else
+                                            <td>Rs.0.00</td>
+                                        @endif
                                     </tr>
                                     </tfoot>
-                                </table><a class="btn btn-primary btn-xl btn-block" href="#">Proceed to checkout</a>
+                                </table>
+                                @if ($cart == null || $cart->item_count == 0)
+                                    <button class="btn btn-primary btn-xl btn-block" disabled>Proceed to checkout
+                                    </button>
+                                @else
+                                    <a class="btn btn-primary btn-xl btn-block" href="{{ route('checkout') }}">Proceed
+                                        to
+                                        checkout</a>
+                                @endif
                             </div>
                         </div>
                     </div>

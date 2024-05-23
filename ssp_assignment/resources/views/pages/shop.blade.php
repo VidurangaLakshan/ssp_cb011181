@@ -43,120 +43,132 @@
                                 <div class="sidebar__content">
                                     <div class="widget widget-filters widget-filters--offcanvas--mobile"
                                          data-collapse data-collapse-opened-class="filter--opened">
-                                        <div class="widget__header widget-filters__header">
-                                            <h4>Filters</h4>
-                                        </div>
-                                        <div class="widget-filters__list">
-                                            <div class="widget-filters__item">
-                                                <div class="filter filter--opened" data-collapse-item>
-                                                    <button
-                                                            type="button" class="filter__title"
-                                                            data-collapse-trigger>Categories <span
-                                                                class="filter__arrow"><svg width="12px" height="7px">
+                                        <form action="/filter" method="GET">
+                                            <div class="widget__header widget-filters__header">
+                                                <h4>Filters</h4>
+                                            </div>
+                                            <div class="widget-filters__list">
+                                                <div class="widget-filters__item">
+                                                    <div class="filter filter--opened" data-collapse-item>
+                                                        <button
+                                                                type="button" class="filter__title"
+                                                                data-collapse-trigger>Categories <span
+                                                                    class="filter__arrow"><svg width="12px"
+                                                                                               height="7px">
 																	<path
                                                                             d="M0.286,0.273 L0.286,0.273 C-0.070,0.629 -0.075,1.204 0.276,1.565 L5.516,6.993 L10.757,1.565 C11.108,1.204 11.103,0.629 10.747,0.273 L10.747,0.273 C10.385,-0.089 9.796,-0.086 9.437,0.279 L5.516,4.296 L1.596,0.279 C1.237,-0.086 0.648,-0.089 0.286,0.273 Z"/>
 																</svg></span></button>
-                                                    <div class="filter__body" data-collapse-content>
-                                                        <div class="filter__container">
-                                                            <div class="filter-categories">
-                                                                <ul class="filter-categories__list">
+                                                        <div class="filter__body" data-collapse-content>
+                                                            <div class="filter__container">
+                                                                <div class="filter-categories">
+                                                                    <ul class="filter-categories__list">
 
-                                                                    @foreach ($categories as $category)
+                                                                        @foreach ($categories as $category)
 
-                                                                        <li
-                                                                                class="filter-categories__item filter-categories__item--parent">
+                                                                            <li
+                                                                                    class="filter-categories__item filter-categories__item--parent">
                                                                             <span
                                                                                     class="filter-categories__arrow"></span><a
-                                                                                    href="/shop/{{ $category->name }}">{{ $category->name }}</a>
-                                                                            <div
-                                                                                    class="filter-categories__counter">{{ $category->products()->where('status', '=', 'active')->count() }}
-                                                                            </div>
-                                                                        </li>
+                                                                                        href="/shop/{{ $category->name }}">{{ $category->name }}</a>
+                                                                                <div
+                                                                                        class="filter-categories__counter">{{ $category->products()->where('status', '=', 'active')->count() }}
+                                                                                </div>
+                                                                            </li>
 
-                                                                    @endforeach
+                                                                        @endforeach
 
 
-                                                                </ul>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="widget-filters__item">
-                                                <div class="filter filter--opened" data-collapse-item>
-                                                    <button
-                                                            type="button" class="filter__title"
-                                                            data-collapse-trigger>Vehicle <span
-                                                                class="filter__arrow"><svg width="12px" height="7px">
+                                                <div class="widget-filters__item">
+                                                    <div class="filter filter--opened" data-collapse-item>
+                                                        <button
+                                                                type="button" class="filter__title"
+                                                                data-collapse-trigger>Vehicle <span
+                                                                    class="filter__arrow"><svg width="12px"
+                                                                                               height="7px">
 																	<path
                                                                             d="M0.286,0.273 L0.286,0.273 C-0.070,0.629 -0.075,1.204 0.276,1.565 L5.516,6.993 L10.757,1.565 C11.108,1.204 11.103,0.629 10.747,0.273 L10.747,0.273 C10.385,-0.089 9.796,-0.086 9.437,0.279 L5.516,4.296 L1.596,0.279 C1.237,-0.086 0.648,-0.089 0.286,0.273 Z"/>
 																</svg></span></button>
-                                                    <div class="filter__body" data-collapse-content>
-                                                        <div class="filter__container">
-                                                            <div class="filter-vehicle">
-                                                                <ul class="filter-vehicle__list">
-                                                                    <li class="filter-vehicle__item"><label
-                                                                                class="filter-vehicle__item-label"><span
-                                                                                    class="filter-list__input input-radio"><span
-                                                                                        class="input-radio__body"><input
-                                                                                            class="input-radio__input"
-                                                                                            name="filter_vehicle"
-                                                                                            checked="checked"
-                                                                                            type="radio"> <span
-                                                                                            class="input-radio__circle"></span>
-																					</span></span><span
-                                                                                    class="filter-vehicle__item-title">All Parts </span><span
-                                                                                    class="filter-vehicle__item-counter">{{ $products->count() }}</span></label>
-                                                                    </li>
-
-                                                                    @foreach ($garageVehicles as $garageVehicle)
+                                                        <div class="filter__body" data-collapse-content>
+                                                            <div class="filter__container">
+                                                                <div class="filter-vehicle">
+                                                                    <ul class="filter-vehicle__list">
                                                                         <li class="filter-vehicle__item"><label
                                                                                     class="filter-vehicle__item-label"><span
                                                                                         class="filter-list__input input-radio"><span
                                                                                             class="input-radio__body"><input
                                                                                                 class="input-radio__input"
                                                                                                 name="filter_vehicle"
-                                                                                                type="radio"
-                                                                                        > <span
+                                                                                                value="all"
+                                                                                                checked="checked"
+                                                                                                type="radio"> <span
                                                                                                 class="input-radio__circle"></span>
 																					</span></span><span
-                                                                                        class="filter-vehicle__item-title">{{ $garageVehicle->year }} {{ $garageVehicle->brand }} {{ $garageVehicle->model }}
+                                                                                        class="filter-vehicle__item-title">All Parts </span>
+                                                                                <span
+                                                                                        class="filter-vehicle__item-counter">{{ \App\Models\Product::all()->count() }}</span></label>
+                                                                        </li>
+
+                                                                        @foreach ($garageVehicles as $garageVehicle)
+                                                                            <li class="filter-vehicle__item"><label
+                                                                                        class="filter-vehicle__item-label"><span
+                                                                                            class="filter-list__input input-radio"><span
+                                                                                                class="input-radio__body"><input
+                                                                                                    class="input-radio__input"
+                                                                                                    name="filter_vehicle"
+                                                                                                    value="{{ $garageVehicle->year }}_{{ $garageVehicle->brand }}_{{ $garageVehicle->model }}"
+                                                                                                    type="radio"
+                                                                                                    @php
+                                                                                                    // split the filter_vehicle value to get the year, brand and model by '_' delimiter
+ @endphp
+                                                                                                    @if ($garageVehicle->year == $setvehicleYear && $garageVehicle->brand == $setvehicleBrand && $garageVehicle->model == $setvehicleModel) checked="checked" @endif
+                                                                                            > <span
+                                                                                                    class="input-radio__circle"></span>
+																					</span></span><span
+                                                                                            class="filter-vehicle__item-title">{{ $garageVehicle->year }} {{ $garageVehicle->brand }} {{ $garageVehicle->model }}
 																					</span>
 
-                                                                                @php
+                                                                                    @php
 
-                                                                                    $supportedVehicles = \App\Models\SupportedVehicles::where('brand', $garageVehicle->brand)->where('model', $garageVehicle->model)->where('year', $garageVehicle->year)->get();
+                                                                                            $supportedVehicles = \App\Models\SupportedVehicles::where('brand', $garageVehicle->brand)->where('model', $garageVehicle->model)->where('year', $garageVehicle->year)->get();
 
-                                                                                @endphp
+                                                                                    @endphp
 
 
-                                                                                <span
-                                                                                        class="filter-vehicle__item-counter">{{ $supportedVehicles->count() }}</span></label>
-                                                                        </li>
-                                                                    @endforeach
+                                                                                    <span
+                                                                                            class="filter-vehicle__item-counter">{{ $supportedVehicles->count() }}</span></label>
+                                                                            </li>
+                                                                        @endforeach
 
-                                                                </ul>
-                                                                <div class="filter-vehicle__button">
+                                                                    </ul>
+                                                                    <div class="filter-vehicle__button">
 
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
+                                            <div class="widget-filters__actions d-flex">
 
-                                        </div>
-                                        <div class="widget-filters__actions d-flex">
-                                            <button
-                                                    class="btn btn-primary btn-sm">Filter
-                                            </button>
-                                            <form action="{{ route('shop') }}">
-                                                <button
-                                                        class="btn btn-secondary btn-sm">Reset
+                                                <button type="submit"
+                                                        class="btn btn-primary btn-sm">Filter
                                                 </button>
-                                            </form>
 
-                                        </div>
+                                                <a value="Reset" href="{{ route('shop') }}"
+                                                   class="btn btn-secondary btn-sm">Reset
+                                                </a>
+
+
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="card widget widget-products d-none d-lg-block">
                                         <div class="widget__header">

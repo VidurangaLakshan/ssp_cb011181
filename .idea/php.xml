@@ -137,6 +137,7 @@
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/fruitcake/php-cors" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/ssp_assignment/vendor/_laravel_idea" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
