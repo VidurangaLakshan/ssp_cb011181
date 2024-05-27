@@ -9,9 +9,9 @@
                         <div class="account-nav flex-grow-1">
                             <h4 class="account-nav__title">Navigation</h4>
                             <ul class="account-nav__list">
-                                <li class="account-nav__item account-nav__item--active"><a
+                                <li class="account-nav__item"><a
                                         href="/account/dashboard">Dashboard</a></li>
-                                <li class="account-nav__item"><a href="/account/garage">Garage</a></li>
+                                <li class="account-nav__item account-nav__item--active"><a href="/account/garage">Garage</a></li>
                                 <li class="account-nav__item"><a href="/user/profile">Edit Profile</a></li>
                                 <li class="account-nav__item"><a href="/account/orders">Order History</a></li>
                                 <li class="account-nav__item"><a href="/account/order/details">Order Details</a>
@@ -35,7 +35,7 @@
                                                     <div class="vehicles-list__item-name">{{ $garageVehicle->year }}
                                                         {{ $garageVehicle->brand }} {{ $garageVehicle->model }}</div>
                                                     <div class="vehicles-list__item-details"></div>
-                                                    <div class="vehicles-list__item-links"><a href="#">Show Parts</a>
+                                                    <div class="vehicles-list__item-links"><a href="/filter?filter_vehicle={{ $garageVehicle->year }}_{{ $garageVehicle->brand }}_{{ $garageVehicle->model }}">Show Parts</a>
                                                     </div>
                                                 </div>
                                                 <form action="{{ route('garage.destroy', $garageVehicle->id) }}"

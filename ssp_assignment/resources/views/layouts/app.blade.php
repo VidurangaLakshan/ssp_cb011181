@@ -426,15 +426,16 @@ h-4c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h4c2.2,0,4-1.8,4-4S77.2,5,75,5z"></path> -
 
                 </div>
 
-                @php
-                    $cart = \App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
 
-//                    $productsInCart = DB::table('cart_product')->where('cart_id', $cart->id)->get();
-
-                @endphp
 
 
                 @auth
+                        @php
+                            $cart = \App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
+
+        //                    $productsInCart = DB::table('cart_product')->where('cart_id', $cart->id)->get();
+
+                        @endphp
 
                     @if (\App\Models\Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first() != null)
                         <div class="indicator indicator--trigger--click">

@@ -28,7 +28,7 @@ class OrderController extends Controller
 //        ]);
 
 
-        Order::create([
+        $order = Order::create([
             'user_id' => auth()->user()->id,
             'cart_id' => $cart->id,
             'shipping_first_name' => $request->input('shipping_first_name'),
@@ -37,14 +37,14 @@ class OrderController extends Controller
             'shipping_post_code' => $request->input('shipping_post_code'),
             'shipping_city' => $request->input('shipping_city'),
             'shipping_mobile' => $request->input('shipping_mobile'),
+            'payment_status' => 'Not Paid',
             'status' => 'Pending',
             'total' => $cart->sub_total
         ]);
 
+//        $cart->is_paid = true;
+//        $cart->update();
 
-        $cart->is_paid = true;
-        $cart->update();
-
-        return redirect()->route('/');
+        return redirect()->route('stripe.payment', ['id' => $order->id, 'total' => $cart->sub_total]);
     }
 }

@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ssp_assignment/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/ssp_assignment/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ssp_assignment/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/copilot/chatSessions" />
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/bacon/bacon-qr-code" />
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/brick/math" />
@@ -130,6 +132,9 @@
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/_laravel_idea" />
+      <excludeFolder url="file://$MODULE_DIR$/ssp_assignment/vendor/stripe/stripe-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/stripe/stripe-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

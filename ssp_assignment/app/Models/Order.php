@@ -21,6 +21,7 @@ class Order extends Model
 //        'shipping_total',
         'total',
         'status',
+        'payment_status',
     ];
 
     protected function user(): BelongsTo

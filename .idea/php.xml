@@ -17,6 +17,9 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
+      <path value="$PROJECT_DIR$/ssp_assignment/vendor/_laravel_idea" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/phpoption/phpoption" />
@@ -137,7 +140,7 @@
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/fruitcake/php-cors" />
       <path value="$PROJECT_DIR$/ssp_assignment/vendor/voku/portable-ascii" />
-      <path value="$PROJECT_DIR$/ssp_assignment/vendor/_laravel_idea" />
+      <path value="$PROJECT_DIR$/ssp_assignment/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

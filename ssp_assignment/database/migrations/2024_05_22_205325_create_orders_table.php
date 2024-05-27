@@ -28,6 +28,7 @@ return new class extends Migration {
 //            $table->float('billing_total');
 
             $table->string('status');
+            $table->string('payment_status');
             $table->float('total');
             $table->timestamps();
         });

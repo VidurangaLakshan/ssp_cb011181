@@ -177,6 +177,46 @@
                             >
                                 <a class="w-full" href="{{ route('product.create') }}">Create Product</a>
                             </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('supported-vehicles.index') }}">All Supported Vehicles</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('supported-vehicles.create') }}">Create Supported Vehicle</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-year.index') }}">All Vehicle Years</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-year.create') }}">Create Vehicle Year</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-brand.index') }}">All Vehicle Brands</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-brand.create') }}">Create Vehicle Brand</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-model.index') }}">All Vehicle Models</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-model.create') }}">Create Vehicle Model</a>
+                            </li>
                         </ul>
                     </template>
                 </li>
@@ -771,30 +811,6 @@
 
                                     <td class="px-4 py-3">
                                         <div class="flex items-center space-x-4 text-sm">
-
-                                            <form action="{{ route('category.show', $category->id) }}">
-                                                <button
-                                                    class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
-                                                    aria-label="Edit" style="color: #ff8800;" type="submit">
-                                                    <svg class="w-6 h-6"
-                                                         aria-hidden="true"
-                                                         fill="none" viewBox="0 0 24 24"
-                                                         xmlns="http://www.w3.org/2000/svg" stroke="#00ff62">
-                                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                                           stroke-linejoin="round"></g>
-                                                        <g id="SVGRepo_iconCarrier">
-                                                            <path
-                                                                d="M17 4H17.2C18.9913 4 19.887 4 20.4435 4.5565C21 5.11299 21 6.00866 21 7.8V8M17 20H17.2C18.9913 20 19.887 20 20.4435 19.4435C21 18.887 21 17.9913 21 16.2V16M7 4H6.8C5.00866 4 4.11299 4 3.5565 4.5565C3 5.11299 3 6.00866 3 7.8V8M7 20H6.8C5.00866 20 4.11299 20 3.5565 19.4435C3 18.887 3 17.9913 3 16.2V16"
-                                                                stroke="00ff62" stroke-width="2"
-                                                                stroke-linecap="round"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                  d="M18.8149 12C18.8149 11.4637 18.6892 11.2462 18.4379 10.8112C17.5834 9.33247 15.6561 7 12 7C8.34395 7 6.41664 9.33247 5.56212 10.8112C5.31077 11.2462 5.18509 11.4637 5.18509 12C5.18509 12.5363 5.31077 12.7538 5.56212 13.1888C6.41664 14.6675 8.34395 17 12 17C15.6561 17 17.5834 14.6675 18.4379 13.1888C18.6892 12.7538 18.8149 12.5363 18.8149 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z"
-                                                                  fill="00ff62"></path>
-                                                        </g>
-                                                    </svg>
-                                                </button>
-                                            </form>
                                             <form action="{{ route('category.edit', $category->id) }}">
                                                 <button
                                                     class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"

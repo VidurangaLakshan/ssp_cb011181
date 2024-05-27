@@ -1,6 +1,7 @@
 <?php
 
 use App\Enums\Role;
+use App\Http\Controllers\StripeController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -224,7 +225,7 @@ Route::get('/admin/category', function () {
  * Orders
  */
 
-Route::get('/success', function () {
+Route::get('/order-success', function () {
     return view('pages.order-success');
 })->name('order-success');
 
@@ -406,3 +407,8 @@ Route::post('/order/create', [
     \App\Http\Controllers\OrderController::class, 'store'
 ])->name('order.store');
 
+
+
+Route::get('payment/{id}/{total}', [StripeController::class, 'session'])->name('stripe.payment');
+Route::get('success', [StripeController::class, 'success'])->name('success');
+//Route::get('checkout', [StripeController::class, 'checkout'])->name('checkout');

@@ -191,6 +191,46 @@
                             >
                                 <a class="w-full" href="{{ route('product.create') }}">Create Product</a>
                             </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('supported-vehicles.index') }}">All Supported Vehicles</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('supported-vehicles.create') }}">Create Supported Vehicle</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-year.index') }}">All Vehicle Years</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-year.create') }}">Create Vehicle Year</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-brand.index') }}">All Vehicle Brands</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-brand.create') }}">Create Vehicle Brand</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-model.index') }}">All Vehicle Models</a>
+                            </li>
+                            <li
+                                class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            >
+                                <a class="w-full" href="{{ route('vehicle-model.create') }}">Create Vehicle Model</a>
+                            </li>
                         </ul>
                     </template>
                 </li>
