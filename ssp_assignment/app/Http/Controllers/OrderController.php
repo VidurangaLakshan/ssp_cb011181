@@ -16,7 +16,7 @@ class OrderController extends Controller
     {
         if (Auth::check() && auth()->user()->role->value == 1) {
             return view('windmill-admin.order.index', [
-                'orders' => Order::orderBy('id', 'DESC')->where('user_id', auth()->user()->id)->where('payment_status', 'Paid')->get()
+                'orders' => Order::orderBy('id', 'DESC')->where('payment_status', 'Paid')->get()
             ]);
         } else {
             abort(403, 'Unauthorized Access');
