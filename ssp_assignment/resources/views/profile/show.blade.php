@@ -106,7 +106,7 @@
 
             @if (Auth::check() && Auth::user()->role->value != 1)
                 @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
-                    <x-section-border/>
+{{--                    <x-section-border/>--}}
 
                     <div class="mt-10 sm:mt-0">
                         @livewire('profile.delete-user-form')

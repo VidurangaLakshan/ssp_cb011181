@@ -55,6 +55,10 @@ function data() {
         togglePagesMenuCategory() {
             this.isPagesMenuOpenCategory = !this.isPagesMenuOpenCategory
         },
+        isPagesMenuOpenOrder: false,
+        togglePagesMenuOrder() {
+            this.isPagesMenuOpenOrder = !this.isPagesMenuOpenOrder
+        },
         // Modal
         isModalOpen: false,
         trapCleanup: null,

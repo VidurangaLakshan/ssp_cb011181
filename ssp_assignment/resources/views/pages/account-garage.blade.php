@@ -14,8 +14,6 @@
                                 <li class="account-nav__item account-nav__item--active"><a href="/account/garage">Garage</a></li>
                                 <li class="account-nav__item"><a href="/user/profile">Edit Profile</a></li>
                                 <li class="account-nav__item"><a href="/account/orders">Order History</a></li>
-                                <li class="account-nav__item"><a href="/account/order/details">Order Details</a>
-                                </li>
                                 <li class="account-nav__item"><a href="/user/profile">Password</a></li>
                             </ul>
                         </div>

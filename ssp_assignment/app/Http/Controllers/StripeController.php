@@ -43,12 +43,13 @@ class StripeController extends Controller
     {
         $cart = Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
 
-//        $order = Order::where('cart_id', $cart->id)->first();
-        $order = Order::where('cart_id', 43)->first();
+        $order = Order::where('cart_id', $cart->id)->first();
+//        $order = Order::where('cart_id', 43)->first();
 
         $cartProducts = \DB::table('cart_product')->where('cart_id', $cart->id)->get();
+
         foreach($cartProducts as $cartProduct) {
-            $product = Product::find('id', $cartProduct->id);
+            $product = Product::find($cartProduct->product_id);
             $currentStock = $product->stock;
 
             $product->stock = $currentStock - $cartProduct->quantity;

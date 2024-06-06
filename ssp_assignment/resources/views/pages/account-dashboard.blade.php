@@ -14,8 +14,6 @@
                                 <li class="account-nav__item"><a href="/account/garage">Garage</a></li>
                                 <li class="account-nav__item"><a href="/user/profile">Edit Profile</a></li>
                                 <li class="account-nav__item"><a href="/account/orders">Order History</a></li>
-                                <li class="account-nav__item"><a href="/account/order/details">Order Details</a>
-                                </li>
                                 <li class="account-nav__item"><a href="/user/profile">Password</a></li>
                             </ul>
                         </div>
@@ -49,24 +47,19 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td><a href="account-order-details.html">#8132</a></td>
-                                                <td>02 April, 2019</td>
-                                                <td>Pending</td>
-                                                <td>$2,719.00 for 5 item(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="account-order-details.html">#7592</a></td>
-                                                <td>28 March, 2019</td>
-                                                <td>Pending</td>
-                                                <td>$374.00 for 3 item(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="account-order-details.html">#7192</a></td>
-                                                <td>15 March, 2019</td>
-                                                <td>Shipped</td>
-                                                <td>$791.00 for 4 item(s)</td>
-                                            </tr>
+                                            @php
+
+                                                $orders = DB::table('orders')->where('user_id', auth()->user()->id)->where('payment_status', 'Paid')->get();
+
+                                            @endphp
+                                            @foreach($orders as $order)
+                                                <tr>
+                                                    <td><a href="{{ route('order-view', $order->id) }}">#{{ $order->id }}</a></td>
+                                                    <td>{{ $order->created_at }}</td>
+                                                    <td>{{ $order->status }}</td>
+                                                    <td>Rs.{{ number_format($order->total, 2, '.', ',' )}}</td>
+                                                </tr>
+                                            @endforeach
                                             </tbody>
                                         </table>
                                     </div>

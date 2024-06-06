@@ -256,24 +256,24 @@
                                                         class="image__tag"
                                                         src="{{ asset($product->image) }}"
                                                         alt=""></a></div>
-                                            <div
-                                                class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
-                                                <div class="status-badge__body">
-                                                    <div class="status-badge__icon">
-                                                        <svg width="13"
-                                                             height="13">
-                                                            <path
-                                                                d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="status-badge__text">Part Fit for 2011 Ford Focus S
-                                                    </div>
-                                                    <div class="status-badge__tooltip" tabindex="0"
-                                                         data-toggle="tooltip"
-                                                         title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">
-                                                    </div>
-                                                </div>
-                                            </div>
+{{--                                            <div--}}
+{{--                                                class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">--}}
+{{--                                                <div class="status-badge__body">--}}
+{{--                                                    <div class="status-badge__icon">--}}
+{{--                                                        <svg width="13"--}}
+{{--                                                             height="13">--}}
+{{--                                                            <path--}}
+{{--                                                                d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
+{{--                                                        </svg>--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="status-badge__text">Part Fit for 2011 Ford Focus S--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="status-badge__tooltip" tabindex="0"--}}
+{{--                                                         data-toggle="tooltip"--}}
+{{--                                                         title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
                                         </div>
                                         <div class="product-card__info">
                                             <div class="product-card__meta">
@@ -354,7 +354,7 @@
                     <div class="owl-carousel">
 
                         @php
-                            $products = \App\Models\Product::all();
+                            $products = \App\Models\Product::all()->where('status', 'active')->take(10);
                         @endphp
 
                         @foreach($products as $product)
@@ -370,24 +370,24 @@
                                                         class="image__tag"
                                                         src="{{ asset($product->image) }}"
                                                         alt=""></a></div>
-                                            <div
-                                                class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
-                                                <div class="status-badge__body">
-                                                    <div class="status-badge__icon">
-                                                        <svg width="13"
-                                                             height="13">
-                                                            <path
-                                                                d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="status-badge__text">Part Fit for 2011 Ford Focus S
-                                                    </div>
-                                                    <div class="status-badge__tooltip" tabindex="0"
-                                                         data-toggle="tooltip"
-                                                         title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">
-                                                    </div>
-                                                </div>
-                                            </div>
+{{--                                            <div--}}
+{{--                                                class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">--}}
+{{--                                                <div class="status-badge__body">--}}
+{{--                                                    <div class="status-badge__icon">--}}
+{{--                                                        <svg width="13"--}}
+{{--                                                             height="13">--}}
+{{--                                                            <path--}}
+{{--                                                                d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
+{{--                                                        </svg>--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="status-badge__text">Part Fit for 2011 Ford Focus S--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="status-badge__tooltip" tabindex="0"--}}
+{{--                                                         data-toggle="tooltip"--}}
+{{--                                                         title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
                                         </div>
                                         <div class="product-card__info">
                                             <div class="product-card__meta">
@@ -430,213 +430,213 @@
 
         <div class="block-space block-space--layout--divider-nl"></div>
 
-        @auth
-            <div class="block block-sale">
-                <div class="block-sale__content">
-                    <div class="block-sale__header">
-                        <div class="block-sale__title">Welcome To Garage Zone</div>
-                        <div class="block-sale__subtitle">Parts curated for your vehicle</div>
-                        <div class="block-sale__controls">
-                            <div class="arrow block-sale__arrow block-sale__arrow--prev arrow--prev">
-                                <button class="arrow__button" type="button">
-                                    <svg width="7" height="11">
-                                        <path
-                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="block-sale__link">
-                                <!-- <a href="#">View All Available Offers</a> -->
-                            </div>
-                            <div class="arrow block-sale__arrow block-sale__arrow--next arrow--next">
-                                <button class="arrow__button" type="button">
-                                    <svg width="7" height="11">
-                                        <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9
-	C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="decor block-sale__header-decor decor--type--center">
-                                <div class="decor__body">
-                                    <div class="decor__start"></div>
-                                    <div class="decor__end"></div>
-                                    <div class="decor__center"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-sale__body">
-                        <div class="decor block-sale__body-decor decor--type--bottom">
-                            <div class="decor__body">
-                                <div class="decor__start"></div>
-                                <div class="decor__end"></div>
-                                <div class="decor__center"></div>
-                            </div>
-                        </div>
-                        <div class="block-sale__image" style="background-image: url('images/sale-1903x640.jpg');">
-                        </div>
-                        <div class="container">
-                            <div class="block-sale__carousel">
-                                <div class="owl-carousel">
+{{--        @auth--}}
+{{--            <div class="block block-sale">--}}
+{{--                <div class="block-sale__content">--}}
+{{--                    <div class="block-sale__header">--}}
+{{--                        <div class="block-sale__title">Welcome To Garage Zone</div>--}}
+{{--                        <div class="block-sale__subtitle">Parts curated for your vehicle</div>--}}
+{{--                        <div class="block-sale__controls">--}}
+{{--                            <div class="arrow block-sale__arrow block-sale__arrow--prev arrow--prev">--}}
+{{--                                <button class="arrow__button" type="button">--}}
+{{--                                    <svg width="7" height="11">--}}
+{{--                                        <path--}}
+{{--                                            d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"></path>--}}
+{{--                                    </svg>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                            <div class="block-sale__link">--}}
+{{--                                <!-- <a href="#">View All Available Offers</a> -->--}}
+{{--                            </div>--}}
+{{--                            <div class="arrow block-sale__arrow block-sale__arrow--next arrow--next">--}}
+{{--                                <button class="arrow__button" type="button">--}}
+{{--                                    <svg width="7" height="11">--}}
+{{--                                        <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9--}}
+{{--	C-0.1,9.8-0.1,10.4,0.3,10.7z"></path>--}}
+{{--                                    </svg>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                            <div class="decor block-sale__header-decor decor--type--center">--}}
+{{--                                <div class="decor__body">--}}
+{{--                                    <div class="decor__start"></div>--}}
+{{--                                    <div class="decor__end"></div>--}}
+{{--                                    <div class="decor__center"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="block-sale__body">--}}
+{{--                        <div class="decor block-sale__body-decor decor--type--bottom">--}}
+{{--                            <div class="decor__body">--}}
+{{--                                <div class="decor__start"></div>--}}
+{{--                                <div class="decor__end"></div>--}}
+{{--                                <div class="decor__center"></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="block-sale__image" style="background-image: url('images/sale-1903x640.jpg');">--}}
+{{--                        </div>--}}
+{{--                        <div class="container">--}}
+{{--                            <div class="block-sale__carousel">--}}
+{{--                                <div class="owl-carousel">--}}
 
-                                    @php
+{{--                                    @php--}}
 
-                                        $vehicles = \App\Models\Garage::where('user_id', auth()->user()->id)->get();
+{{--                                        $vehicles = \App\Models\Garage::where('user_id', auth()->user()->id)->get();--}}
 
-//                                        $products = \App\Models\Product::where('id', $supportedVehicles->product_id)->get();
+{{--//                                        $products = \App\Models\Product::where('id', $supportedVehicles->product_id)->get();--}}
 
-                                        // only show all the products that are supported by the user's vehicle
-    //                                    foreach($vehicles as $vehicle) {
-    //                                        $supportedVehicles = \App\Models\SupportedVehicles::where('brand', $vehicle->year, 'model', $vehicle->model, 'year', $vehicle->year)->get();
-    //                                        foreach($supportedVehicles as $supportedVehicle) {
-    //                                            $product = \App\Models\Product::where('id', $supportedVehicle->product_id)->get();
-    //
-    //                                        }
-    //
-    //                                    }
+{{--                                        // only show all the products that are supported by the user's vehicle--}}
+{{--    //                                    foreach($vehicles as $vehicle) {--}}
+{{--    //                                        $supportedVehicles = \App\Models\SupportedVehicles::where('brand', $vehicle->year, 'model', $vehicle->model, 'year', $vehicle->year)->get();--}}
+{{--    //                                        foreach($supportedVehicles as $supportedVehicle) {--}}
+{{--    //                                            $product = \App\Models\Product::where('id', $supportedVehicle->product_id)->get();--}}
+{{--    //--}}
+{{--    //                                        }--}}
+{{--    //--}}
+{{--    //                                    }--}}
 
-                                    @endphp
+{{--                                    @endphp--}}
 
-                                    {{--                                    @foreach($vehicles as $vehicle)--}}
-                                    {{--                                        @php--}}
-                                    {{--                                            $supportedVehicles = \App\Models\SupportedVehicles::where('brand', $vehicle->brand, 'model', $vehicle->model, 'year', $vehicle->year)->get();--}}
-                                    {{--                                        @endphp--}}
-                                    {{--                                        @foreach($supportedVehicles as $supportedVehicle)--}}
-                                    {{--                                            {--}}
-                                    {{--                                            @php--}}
-                                    {{--                                                $product = \App\Models\Product::where('id', $supportedVehicle->product_id)->get();--}}
-                                    {{--                                            @endphp--}}
+{{--                                    --}}{{--                                    @foreach($vehicles as $vehicle)--}}
+{{--                                    --}}{{--                                        @php--}}
+{{--                                    --}}{{--                                            $supportedVehicles = \App\Models\SupportedVehicles::where('brand', $vehicle->brand, 'model', $vehicle->model, 'year', $vehicle->year)->get();--}}
+{{--                                    --}}{{--                                        @endphp--}}
+{{--                                    --}}{{--                                        @foreach($supportedVehicles as $supportedVehicle)--}}
+{{--                                    --}}{{--                                            {--}}
+{{--                                    --}}{{--                                            @php--}}
+{{--                                    --}}{{--                                                $product = \App\Models\Product::where('id', $supportedVehicle->product_id)->get();--}}
+{{--                                    --}}{{--                                            @endphp--}}
 
-                                    {{--                                            <div class="block-sale__item">--}}
-                                    {{--                                                <div class="product-card">--}}
-                                    {{--                                                    <div class="product-card__image">--}}
-                                    {{--                                                        <div class="image image--type--product"><a href="#"--}}
-                                    {{--                                                                                                   class="image__body"><img--}}
-                                    {{--                                                                    class="image__tag"--}}
-                                    {{--                                                                    src="{{ asset($product->image) }}"--}}
-                                    {{--                                                                    alt=""></a>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                        <div--}}
-                                    {{--                                                            class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">--}}
-                                    {{--                                                            <div class="status-badge__body">--}}
-                                    {{--                                                                <div class="status-badge__icon">--}}
-                                    {{--                                                                    <svg width="13"--}}
-                                    {{--                                                                         height="13">--}}
-                                    {{--                                                                        <path--}}
-                                    {{--                                                                            d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
-                                    {{--                                                                    </svg>--}}
-                                    {{--                                                                </div>--}}
-                                    {{--                                                                <div class="status-badge__text">Part Fit for 2011 Ford Focus--}}
-                                    {{--                                                                    S--}}
-                                    {{--                                                                </div>--}}
-                                    {{--                                                                <div class="status-badge__tooltip" tabindex="0"--}}
-                                    {{--                                                                     data-toggle="tooltip"--}}
-                                    {{--                                                                     title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
-                                    {{--                                                                </div>--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                    <div class="product-card__info">--}}
-                                    {{--                                                        <div class="product-card__meta">--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                        <div class="product-card__name">--}}
-                                    {{--                                                            <div>--}}
-                                    {{--                                                                <a href="#">{{ $product->name }}</a>--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                    <div class="product-card__footer">--}}
-                                    {{--                                                        <div class="product-card__prices">--}}
-                                    {{--                                                            <div class="product-card__price product-card__price--current">--}}
-                                    {{--                                                                Rs.{{ number_format($product->price, 2, '.', ',') }}--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                        <button class="product-card__addtocart-icon" type="button"--}}
-                                    {{--                                                                aria-label="Add to cart">--}}
-                                    {{--                                                            <svg width="20" height="20">--}}
-                                    {{--                                                                <circle cx="7" cy="17" r="2"/>--}}
-                                    {{--                                                                <circle cx="15" cy="17" r="2"/>--}}
-                                    {{--                                                                <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6--}}
-                                    {{-- V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4--}}
-                                    {{-- C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/>--}}
-                                    {{--                                                            </svg>--}}
-                                    {{--                                                        </button>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                </div>--}}
-                                    {{--                                            </div>--}}
-                                    {{--                                        @endforeach--}}
-                                    {{--                                    @endforeach--}}
+{{--                                    --}}{{--                                            <div class="block-sale__item">--}}
+{{--                                    --}}{{--                                                <div class="product-card">--}}
+{{--                                    --}}{{--                                                    <div class="product-card__image">--}}
+{{--                                    --}}{{--                                                        <div class="image image--type--product"><a href="#"--}}
+{{--                                    --}}{{--                                                                                                   class="image__body"><img--}}
+{{--                                    --}}{{--                                                                    class="image__tag"--}}
+{{--                                    --}}{{--                                                                    src="{{ asset($product->image) }}"--}}
+{{--                                    --}}{{--                                                                    alt=""></a>--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                        <div--}}
+{{--                                    --}}{{--                                                            class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">--}}
+{{--                                    --}}{{--                                                            <div class="status-badge__body">--}}
+{{--                                    --}}{{--                                                                <div class="status-badge__icon">--}}
+{{--                                    --}}{{--                                                                    <svg width="13"--}}
+{{--                                    --}}{{--                                                                         height="13">--}}
+{{--                                    --}}{{--                                                                        <path--}}
+{{--                                    --}}{{--                                                                            d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
+{{--                                    --}}{{--                                                                    </svg>--}}
+{{--                                    --}}{{--                                                                </div>--}}
+{{--                                    --}}{{--                                                                <div class="status-badge__text">Part Fit for 2011 Ford Focus--}}
+{{--                                    --}}{{--                                                                    S--}}
+{{--                                    --}}{{--                                                                </div>--}}
+{{--                                    --}}{{--                                                                <div class="status-badge__tooltip" tabindex="0"--}}
+{{--                                    --}}{{--                                                                     data-toggle="tooltip"--}}
+{{--                                    --}}{{--                                                                     title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
+{{--                                    --}}{{--                                                                </div>--}}
+{{--                                    --}}{{--                                                            </div>--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                    <div class="product-card__info">--}}
+{{--                                    --}}{{--                                                        <div class="product-card__meta">--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                        <div class="product-card__name">--}}
+{{--                                    --}}{{--                                                            <div>--}}
+{{--                                    --}}{{--                                                                <a href="#">{{ $product->name }}</a>--}}
+{{--                                    --}}{{--                                                            </div>--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                    <div class="product-card__footer">--}}
+{{--                                    --}}{{--                                                        <div class="product-card__prices">--}}
+{{--                                    --}}{{--                                                            <div class="product-card__price product-card__price--current">--}}
+{{--                                    --}}{{--                                                                Rs.{{ number_format($product->price, 2, '.', ',') }}--}}
+{{--                                    --}}{{--                                                            </div>--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                        <button class="product-card__addtocart-icon" type="button"--}}
+{{--                                    --}}{{--                                                                aria-label="Add to cart">--}}
+{{--                                    --}}{{--                                                            <svg width="20" height="20">--}}
+{{--                                    --}}{{--                                                                <circle cx="7" cy="17" r="2"/>--}}
+{{--                                    --}}{{--                                                                <circle cx="15" cy="17" r="2"/>--}}
+{{--                                    --}}{{--                                                                <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6--}}
+{{--                                    --}}{{-- V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4--}}
+{{--                                    --}}{{-- C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/>--}}
+{{--                                    --}}{{--                                                            </svg>--}}
+{{--                                    --}}{{--                                                        </button>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                </div>--}}
+{{--                                    --}}{{--                                            </div>--}}
+{{--                                    --}}{{--                                        @endforeach--}}
+{{--                                    --}}{{--                                    @endforeach--}}
 
 
-                                    {{--                                    @foreach($products as $product)--}}
+{{--                                    --}}{{--                                    @foreach($products as $product)--}}
 
-                                    {{--                                        <div class="block-sale__item">--}}
-                                    {{--                                            <div class="product-card">--}}
-                                    {{--                                                <div class="product-card__image">--}}
-                                    {{--                                                    <div class="image image--type--product"><a href="#"--}}
-                                    {{--                                                                                               class="image__body"><img--}}
-                                    {{--                                                                class="image__tag"--}}
-                                    {{--                                                                src="{{ asset($product->image) }}"--}}
-                                    {{--                                                                alt=""></a>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                    <div--}}
-                                    {{--                                                        class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">--}}
-                                    {{--                                                        <div class="status-badge__body">--}}
-                                    {{--                                                            <div class="status-badge__icon">--}}
-                                    {{--                                                                <svg width="13"--}}
-                                    {{--                                                                     height="13">--}}
-                                    {{--                                                                    <path--}}
-                                    {{--                                                                        d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
-                                    {{--                                                                </svg>--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                            <div class="status-badge__text">Part Fit for 2011 Ford Focus--}}
-                                    {{--                                                                S--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                            <div class="status-badge__tooltip" tabindex="0"--}}
-                                    {{--                                                                 data-toggle="tooltip"--}}
-                                    {{--                                                                 title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
-                                    {{--                                                            </div>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                </div>--}}
-                                    {{--                                                <div class="product-card__info">--}}
-                                    {{--                                                    <div class="product-card__meta">--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                    <div class="product-card__name">--}}
-                                    {{--                                                        <div>--}}
-                                    {{--                                                            <a href="#">{{ $product->name }}</a>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                </div>--}}
-                                    {{--                                                <div class="product-card__footer">--}}
-                                    {{--                                                    <div class="product-card__prices">--}}
-                                    {{--                                                        <div class="product-card__price product-card__price--current">--}}
-                                    {{--                                                            Rs.{{ number_format($product->price, 2, '.', ',') }}--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                    <button class="product-card__addtocart-icon" type="button"--}}
-                                    {{--                                                            aria-label="Add to cart">--}}
-                                    {{--                                                        <svg width="20" height="20">--}}
-                                    {{--                                                            <circle cx="7" cy="17" r="2"/>--}}
-                                    {{--                                                            <circle cx="15" cy="17" r="2"/>--}}
-                                    {{--                                                            <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6--}}
-                                    {{-- V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4--}}
-                                    {{-- C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/>--}}
-                                    {{--                                                        </svg>--}}
-                                    {{--                                                    </button>--}}
-                                    {{--                                                </div>--}}
-                                    {{--                                            </div>--}}
-                                    {{--                                        </div>--}}
+{{--                                    --}}{{--                                        <div class="block-sale__item">--}}
+{{--                                    --}}{{--                                            <div class="product-card">--}}
+{{--                                    --}}{{--                                                <div class="product-card__image">--}}
+{{--                                    --}}{{--                                                    <div class="image image--type--product"><a href="#"--}}
+{{--                                    --}}{{--                                                                                               class="image__body"><img--}}
+{{--                                    --}}{{--                                                                class="image__tag"--}}
+{{--                                    --}}{{--                                                                src="{{ asset($product->image) }}"--}}
+{{--                                    --}}{{--                                                                alt=""></a>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                    <div--}}
+{{--                                    --}}{{--                                                        class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">--}}
+{{--                                    --}}{{--                                                        <div class="status-badge__body">--}}
+{{--                                    --}}{{--                                                            <div class="status-badge__icon">--}}
+{{--                                    --}}{{--                                                                <svg width="13"--}}
+{{--                                    --}}{{--                                                                     height="13">--}}
+{{--                                    --}}{{--                                                                    <path--}}
+{{--                                    --}}{{--                                                                        d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z"/>--}}
+{{--                                    --}}{{--                                                                </svg>--}}
+{{--                                    --}}{{--                                                            </div>--}}
+{{--                                    --}}{{--                                                            <div class="status-badge__text">Part Fit for 2011 Ford Focus--}}
+{{--                                    --}}{{--                                                                S--}}
+{{--                                    --}}{{--                                                            </div>--}}
+{{--                                    --}}{{--                                                            <div class="status-badge__tooltip" tabindex="0"--}}
+{{--                                    --}}{{--                                                                 data-toggle="tooltip"--}}
+{{--                                    --}}{{--                                                                 title="Part&#x20;Fit&#x20;for&#x20;2011&#x20;Ford&#x20;Focus&#x20;S">--}}
+{{--                                    --}}{{--                                                            </div>--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                </div>--}}
+{{--                                    --}}{{--                                                <div class="product-card__info">--}}
+{{--                                    --}}{{--                                                    <div class="product-card__meta">--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                    <div class="product-card__name">--}}
+{{--                                    --}}{{--                                                        <div>--}}
+{{--                                    --}}{{--                                                            <a href="#">{{ $product->name }}</a>--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                </div>--}}
+{{--                                    --}}{{--                                                <div class="product-card__footer">--}}
+{{--                                    --}}{{--                                                    <div class="product-card__prices">--}}
+{{--                                    --}}{{--                                                        <div class="product-card__price product-card__price--current">--}}
+{{--                                    --}}{{--                                                            Rs.{{ number_format($product->price, 2, '.', ',') }}--}}
+{{--                                    --}}{{--                                                        </div>--}}
+{{--                                    --}}{{--                                                    </div>--}}
+{{--                                    --}}{{--                                                    <button class="product-card__addtocart-icon" type="button"--}}
+{{--                                    --}}{{--                                                            aria-label="Add to cart">--}}
+{{--                                    --}}{{--                                                        <svg width="20" height="20">--}}
+{{--                                    --}}{{--                                                            <circle cx="7" cy="17" r="2"/>--}}
+{{--                                    --}}{{--                                                            <circle cx="15" cy="17" r="2"/>--}}
+{{--                                    --}}{{--                                                            <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6--}}
+{{--                                    --}}{{-- V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4--}}
+{{--                                    --}}{{-- C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z"/>--}}
+{{--                                    --}}{{--                                                        </svg>--}}
+{{--                                    --}}{{--                                                    </button>--}}
+{{--                                    --}}{{--                                                </div>--}}
+{{--                                    --}}{{--                                            </div>--}}
+{{--                                    --}}{{--                                        </div>--}}
 
-                                    {{--                                    @endforeach--}}
+{{--                                    --}}{{--                                    @endforeach--}}
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endauth
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        @endauth--}}
     </div><!-- site__body / end -->
 
 

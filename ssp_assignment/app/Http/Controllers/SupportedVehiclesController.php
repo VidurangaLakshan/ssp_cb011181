@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\SupportedVehicles;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SupportedVehiclesController extends Controller
 {
@@ -12,9 +13,14 @@ class SupportedVehiclesController extends Controller
      */
     public function index()
     {
-        return view('windmill-admin.supported-vehicles.index', [
-            'supportedVehicles' => SupportedVehicles::all()
-        ]);
+        if (Auth::check() && auth()->user()->role->value == 1) {
+
+            return view('windmill-admin.supported-vehicles.index', [
+                'supportedVehicles' => SupportedVehicles::all()
+            ]);
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 
     /**
@@ -22,14 +28,19 @@ class SupportedVehiclesController extends Controller
      */
     public function create()
     {
-        return view('windmill-admin.supported-vehicles.form', [
-            'supportedVehicle' => new SupportedVehicles(),
-            'purpose' => 'Create Supported Vehicles',
-            'products' => \App\Models\Product::all(),
-            'vehicleYears' => \App\Models\VehicleYear::all(),
-            'vehicleBrands' => \App\Models\VehicleBrand::all(),
-            'vehicleModels' => \App\Models\VehicleModel::all(),
-        ]);
+        if (Auth::check() && auth()->user()->role->value == 1) {
+
+            return view('windmill-admin.supported-vehicles.form', [
+                'supportedVehicle' => new SupportedVehicles(),
+                'purpose' => 'Create Supported Vehicles',
+                'products' => \App\Models\Product::all(),
+                'vehicleYears' => \App\Models\VehicleYear::all(),
+                'vehicleBrands' => \App\Models\VehicleBrand::all(),
+                'vehicleModels' => \App\Models\VehicleModel::all(),
+            ]);
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 
     /**
@@ -83,9 +94,13 @@ class SupportedVehiclesController extends Controller
      */
     public function destroy(SupportedVehicles $supportedVehicle)
     {
+        if (Auth::check() && auth()->user()->role->value == 1) {
 
-        $supportedVehicle->delete();
+            $supportedVehicle->delete();
 
-        return redirect('/supported-vehicles');
+            return redirect('/supported-vehicles')->with('success', 'Supported Vehicle Deleted Successfully');
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 }

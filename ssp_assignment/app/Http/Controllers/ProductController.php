@@ -9,21 +9,30 @@ use File;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        return redirect()->route('admin.product.index');
+        if (Auth::check() && auth()->user()->role->value == 1) {
+            return redirect()->route('admin.product.index');
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 
     public function create()
     {
+        if (Auth::check() && auth()->user()->role->value == 1) {
         return view('windmill-admin.product.form', [
             'product' => new Product(),
             'purpose' => 'Create Product',
             'categories' => Category::all(),
         ]);
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 
     public function store(Request $request)
@@ -398,11 +407,15 @@ class ProductController extends Controller
 
     public function edit(Product $product)
     {
+        if (Auth::check() && auth()->user()->role->value == 1) {
         return view('windmill-admin.product.form', [
             'product' => $product,
             'purpose' => 'Edit Product',
             'categories' => Category::all(),
         ]);
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 
     public function update(Request $request, Product $product)
@@ -509,9 +522,12 @@ class ProductController extends Controller
 
     public function destroy(Product $product)
     {
+        if (Auth::check() && auth()->user()->role->value == 1) {
         $product->delete();
-
         return redirect()->route('admin.product.index')->with('success', 'Product Deleted Successfully!');
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
 
     public function removeSecondaryImages(Product $product)

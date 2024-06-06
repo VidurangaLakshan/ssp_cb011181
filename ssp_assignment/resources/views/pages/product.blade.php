@@ -164,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="product__main">
-                                    <div class="product__excerpt"> {{ $product->description }}
+                                    <div class="product__excerpt"> {!! nl2br(e($product->description)) !!}
                                     </div>
                                     {{--                                    <div class="product__features">--}}
                                     {{--                                        <div class="product__features-title">Key Features:</div>--}}
@@ -441,7 +441,7 @@
                                         <div class="product-tabs__pane product-tabs__pane--active"
                                              id="product-tab-description">
                                             <div class="typography">
-                                                {{ $product->meta_description }}
+                                                {!! nl2br(e($product->meta_description)) !!}
                                             </div>
                                         </div>
                                     </div>

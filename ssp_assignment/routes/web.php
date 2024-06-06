@@ -2,6 +2,7 @@
 
 use App\Enums\Role;
 use App\Http\Controllers\StripeController;
+use App\Models\Order;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/order-view/{id}', [\App\Http\Controllers\OrderController::class, 'view'])->name('order-view');
 
 Route::get('/', function () {
     return view('pages.home');
@@ -87,31 +89,37 @@ Route::resource(
     \App\Http\Controllers\SupportedVehiclesController::class
 );
 
+Route::resource(
+    'order',
+    \App\Http\Controllers\OrderController::class
+);
+
+
+
 Route::get('/admin/supported-vehicles', [
     \App\Http\Controllers\SupportedVehiclesController::class, 'index'
-])->name('supported-vehicles.index');
-
+])->name('supported-vehicles.index')->middleware('product');
 
 
 
 
 Route::get('/admin/vehicle-year', [
     \App\Http\Controllers\VehicleYearController::class, 'index'
-])->name('vehicle-year.index');
+])->name('vehicle-year.index')->middleware('product');
 
 
 Route::get('/admin/vehicle-year/create', [
     \App\Http\Controllers\VehicleYearController::class, 'create'
-])->name('vehicle-year.create');
+])->name('vehicle-year.create')->middleware('product');
 
 
 Route::post('/admin/vehicle-year', [
     \App\Http\Controllers\VehicleYearController::class, 'store'
-])->name('vehicle-year.store');
+])->name('vehicle-year.store')->middleware('product');
 
 Route::delete('/admin/vehicle-year/{vehicleYear}', [
     \App\Http\Controllers\VehicleYearController::class, 'destroy'
-])->name('vehicle-year.destroy');
+])->name('vehicle-year.destroy')->middleware('product');
 
 
 
@@ -120,21 +128,21 @@ Route::delete('/admin/vehicle-year/{vehicleYear}', [
 
 Route::get('/admin/vehicle-brand', [
     \App\Http\Controllers\VehicleBrandController::class, 'index'
-])->name('vehicle-brand.index');
+])->name('vehicle-brand.index')->middleware('product');
 
 
 Route::get('/admin/vehicle-brand/create', [
     \App\Http\Controllers\VehicleBrandController::class, 'create'
-])->name('vehicle-brand.create');
+])->name('vehicle-brand.create')->middleware('product');
 
 
 Route::post('/admin/vehicle-brand', [
     \App\Http\Controllers\VehicleBrandController::class, 'store'
-])->name('vehicle-brand.store');
+])->name('vehicle-brand.store')->middleware('product');
 
 Route::delete('/admin/vehicle-brand/{vehicleBrand}', [
     \App\Http\Controllers\VehicleBrandController::class, 'destroy'
-])->name('vehicle-brand.destroy');
+])->name('vehicle-brand.destroy')->middleware('product');
 
 
 
@@ -145,22 +153,22 @@ Route::delete('/admin/vehicle-brand/{vehicleBrand}', [
 
 Route::get('/admin/vehicle-model', [
     \App\Http\Controllers\VehicleModelController::class, 'index'
-])->name('vehicle-model.index');
+])->name('vehicle-model.index')->middleware('product');
 
 
 Route::get('/admin/vehicle-model/create', [
     \App\Http\Controllers\VehicleModelController::class, 'create'
-])->name('vehicle-model.create');
+])->name('vehicle-model.create')->middleware('product');
 
 
 Route::post('/admin/vehicle-model', [
     \App\Http\Controllers\VehicleModelController::class, 'store'
-])->name('vehicle-model.store');
+])->name('vehicle-model.store')->middleware('product');
 
 
 Route::delete('/admin/vehicle-model/{vehicleModel}', [
     \App\Http\Controllers\VehicleModelController::class, 'destroy'
-])->name('vehicle-model.destroy');
+])->name('vehicle-model.destroy')->middleware('product');
 
 
 
@@ -181,7 +189,7 @@ Route::delete('/admin/vehicle-model/{vehicleModel}', [
 
 Route::get('/admin/dashboard', function () {
     return view('windmill-admin.dashboard');
-})->name('admin.dashboard');
+})->name('admin.dashboard')->middleware('product');
 
 
 /**
@@ -203,12 +211,18 @@ Route::get('/admin/product', function () {
     return view('windmill-admin.product.index', [
         'products' => \App\Models\Product::orderBy('id','DESC')->paginate(10),
     ]);
-})->name('admin.product.index');
+})->name('admin.product.index')->middleware('product');
 
 Route::post('/product/{product}/remove-images', [
     \App\Http\Controllers\ProductController::class, 'removeSecondaryImages'
-])->name('product.remove-images');
+])->name('product.remove-images')->middleware('product');
 
+
+Route::get('/admin/order', function () {
+    return view('windmill-admin.order.index', [
+        'orders' => \App\Models\Order::orderBy('id','DESC')->where('payment_status', 'Paid')->get(),
+    ]);
+})->name('admin.order.index')->middleware('product');
 
 /**
  * Categories
@@ -218,7 +232,7 @@ Route::get('/admin/category', function () {
     return view('windmill-admin.category.index', [
         'categories' => \App\Models\Category::orderBy('id','DESC')->paginate(10),
     ]);
-})->name('admin.category.index');
+})->name('admin.category.index')->middleware('product');
 
 
 /**

@@ -17,3 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/products', function() {
+    $products = \App\Models\Product::all();
+    return response()
+        ->json([
+        'products' => $products
+    ]);
+});
+
+Route::get('/users', function() {
+    $users = \App\Models\User::all();
+    return response()
+        ->json([
+        'users' => $users
+    ]);
+});

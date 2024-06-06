@@ -3,30 +3,66 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\Category;
 use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 class OrderController extends Controller
 {
     public function index()
     {
-
+        if (Auth::check() && auth()->user()->role->value == 1) {
+            return view('windmill-admin.order.index', [
+                'orders' => Order::orderBy('id', 'DESC')->where('user_id', auth()->user()->id)->where('payment_status', 'Paid')->get()
+            ]);
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
     }
+
+    public function edit(Order $order)
+    {
+        if (Auth::check() && auth()->user()->role->value == 1) {
+            return view('windmill-admin.order.form', [
+                'order' => $order,
+            ]);
+        } else {
+            abort(403, 'Unauthorized Access');
+        }
+    }
+
+    public function update(Request $request, Order $order)
+    {
+        $order->status = $request->status;
+        $order->update();
+
+        return redirect()->route('admin.order.index')->with('success', 'Order Updated Successfully!');
+    }
+
+    public function show(Order $order)
+    {
+        return view('pages.order-success', [
+            'order' => $order,
+        ]);
+    }
+
+    public function view(Request $request, Order $order)
+    {
+//        dd($request->getPathInfo(), substr($request->getPathInfo(), 12));
+//        substr($request->getPathInfo(), '/order-view/', 1)
+        $order = Order::where('id', substr($request->getPathInfo(), 12))->first();
+        return view('pages.order-view', [
+            'order' => $order,
+        ]);
+    }
+
 
     public function store(Request $request)
     {
         $cart = Cart::where('user_id', auth()->user()->id)->where('is_paid', false)->first();
-
-//        $request->validate([
-//            'shipping_first_name' => 'required',
-//            'shipping_last_name' => 'required',
-//            'shipping_address' => 'required',
-//            'shipping_post_code' => 'required',
-//            'shipping_city' => 'required',
-//            'shipping_mobile' => 'required',
-//        ]);
-
 
         $order = Order::create([
             'user_id' => auth()->user()->id,
@@ -46,5 +82,13 @@ class OrderController extends Controller
 //        $cart->update();
 
         return redirect()->route('stripe.payment', ['id' => $order->id, 'total' => $cart->sub_total]);
+    }
+
+    public function destroy(Order $order)
+    {
+        $order->delete();
+
+        return redirect()->route('admin.order.index')->with('success', 'Order Deleted Successfully!');
+
     }
 }
